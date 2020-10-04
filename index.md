@@ -45,7 +45,7 @@
 
 [Fashion_MNIST classification](https://github.com/SuiseiSaika/TF2G_Fashion_MNIST)
 
-[IMDb classification](https://github.com/SuiseiSaika/TF2G_IMDb)
+[IMDb classification](https://github.com/SuiseiSaika/TF2G_IMDb/blob/master/TF2G_IMDb_RNN.ipynb)
 
 [Generative adversarial network](http://example.com/)
 
