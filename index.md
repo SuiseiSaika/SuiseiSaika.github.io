@@ -1,8 +1,7 @@
-## Portfolio
-
----
 
 ### Projects 
+
+---
 
 [GearLyze](/sample_page)
 
@@ -23,7 +22,7 @@
 
 ---
 
-[DL-VoiceChanger](http://example.com/)
+[DL-VoiceChanger](https://github.com/SuiseiSaika/DL-VoiceChanger)
 
 <img src="images/dummy_thumbnail.jpg?raw=true"/>
 
@@ -42,9 +41,12 @@
 ---
 
 ### Practice
-[MNIST classification](http://example.com/)
-[Fashion_MNIST classification](http://example.com/)
-[IMDb classification](http://example.com/)
+[MNIST classification](https://github.com/SuiseiSaika/TF2G_MNIST)
+
+[Fashion_MNIST classification](https://github.com/SuiseiSaika/TF2G_Fashion_MNIST)
+
+[IMDb classification](https://github.com/SuiseiSaika/TF2G_IMDb)
+
 [Generative adversarial network](http://example.com/)
 
 
