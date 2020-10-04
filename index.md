@@ -4,22 +4,56 @@
 
 ### Projects 
 
-[Project 1 Title](/sample_page)
+[GearLyze](/sample_page)
+
 <img src="images/dummy_thumbnail.jpg?raw=true"/>
+
 #### Description
+
+
+
 ---
-[Project 2 Title](/pdf/sample_presentation.pdf)
+
+[CIFAR-10 classification](https://github.com/SuiseiSaika/CIFAR-10_in_Keras)
+
 <img src="images/dummy_thumbnail.jpg?raw=true"/>
+
 #### Description
+
+
 ---
+
+[DL-VoiceChanger](http://example.com/)
+
+<img src="images/dummy_thumbnail.jpg?raw=true"/>
+
+#### Description
+
+
+---
+
 [Project 3 Title](http://example.com/)
+
 <img src="images/dummy_thumbnail.jpg?raw=true"/>
+
+#### Description
+
 
 ---
 
-### Category Name 2
+### Practice
+[MNIST classification](http://example.com/)
+[Fashion_MNIST classification](http://example.com/)
+[IMDb classification](http://example.com/)
+[Generative adversarial network](http://example.com/)
 
-- [Project 1 Title](http://example.com/)
+
+---
+
+### Skillset
+
+- Programming Languages: Java, Python, JavaScript
+- Deep learning frameworks: TensorFlow, Keras, Pytorch
 
 ---
 
