@@ -5,7 +5,8 @@
 
 [GearLyze](/sample_page)
 
-<img src="images/dummy_thumbnail.jpg?raw=true"/>
+<img src="images/GL_01_his.jpg?raw=true"/>
+<img src="images/GL_02_map.jpg?raw=true"/>
 
 #### Description
 
@@ -15,7 +16,7 @@
 
 [CIFAR-10 classification](https://github.com/SuiseiSaika/CIFAR-10_in_Keras)
 
-<img src="images/dummy_thumbnail.jpg?raw=true"/>
+<img src="images/C10.jpg?raw=true"/>
 
 #### Description
 
@@ -24,16 +25,8 @@
 
 [DL-VoiceChanger](https://github.com/SuiseiSaika/DL-VoiceChanger)
 
-<img src="images/dummy_thumbnail.jpg?raw=true"/>
-
-#### Description
-
-
----
-
-[Project 3 Title](http://example.com/)
-
-<img src="images/dummy_thumbnail.jpg?raw=true"/>
+<img src="images/loss.png?raw=true"/>
+<img src="images/g_loss.png?raw=true"/>
 
 #### Description
 
