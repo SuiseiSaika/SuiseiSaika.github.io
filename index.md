@@ -3,11 +3,12 @@
 
 ---
 
-[GearLyze](/sample_page)
+## GearLyze ## 
 
-<img src="images/GL_01_hismap.jpg?raw=true"/>
+#### Description ####
+The purpose of GearLyze was to provide a brand search system. After users enter the brand to be searched, the system will perform an analysis of the articles on the forum and position it by correspondence analysis.
 
-#### Description
+![image](images/GL_01_hismap.jpg)
 
 
 
