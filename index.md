@@ -17,7 +17,7 @@ The purpose of GearLyze was to provide a brand search system. After users enter 
 CIFAR-10 classification [[GitHub Page](https://github.com/SuiseiSaika/CIFAR-10_in_Keras)]
 
 #### Description
-We implemented a VGG16 model in TensorFlow to classify images from the CIFAR-10 dataset, and tried to prevent overfitting in serveral methods. We finally get 93.5% validation accuracy. 
+We implemented a VGG16 model in TensorFlow to classify images from the CIFAR-10 dataset, and tried to prevent overfitting in serveral methods. We finally got 93.5% validation accuracy after 1000 epochs train. 
 
 ![image](images/C10.jpg)
 
