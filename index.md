@@ -14,9 +14,9 @@ The purpose of GearLyze was to provide a brand search system. After users enter 
 
 ---
 
-[CIFAR-10 classification](https://github.com/SuiseiSaika/CIFAR-10_in_Keras)
+CIFAR-10 classification [[GitHub Page](https://github.com/SuiseiSaika/CIFAR-10_in_Keras)]
 
-<img src="images/C10.jpg?raw=true"/>
+![image](images/C10.jpg)
 
 #### Description
 
@@ -25,8 +25,8 @@ The purpose of GearLyze was to provide a brand search system. After users enter 
 
 [DL-VoiceChanger](https://github.com/SuiseiSaika/DL-VoiceChanger)
 
-<img src="images/loss.png?raw=true"/>
-<img src="images/g_loss.png?raw=true"/>
+![image](images/loss.png)
+![image](images/g_loss.png)
 
 #### Description
 
