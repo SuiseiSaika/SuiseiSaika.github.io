@@ -31,7 +31,7 @@ We implemented a VGG16 model in TensorFlow to classify images from the CIFAR-10 
 ![image](images/g_loss.png)
 
 #### Description
-
+The purpose of this project was to convert one's voice to another's. We tried to use CycleGAN model with U-Net structure for generator model and ResNet structure for discriminator model. The project is still ongoing.
 
 ---
 
