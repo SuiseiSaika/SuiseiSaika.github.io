@@ -42,7 +42,7 @@ The purpose of this project was to convert one's voice to another's. We tried to
 
 [IMDb classification](https://github.com/SuiseiSaika/TF2G_IMDb/blob/master/TF2G_IMDb_RNN.ipynb)
 
-[Generative adversarial network]
+[Generative adversarial network(Ongoing)]
 
 
 ---
