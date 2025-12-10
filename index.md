@@ -1,48 +1,99 @@
-
-# Projects 
-
----
-
-## GearLyze ## 
-
-#### Description ####
-The purpose of GearLyze was to provide a brand search system. After users enter the brand to be searched, the system will perform an analysis of the articles on the forum and position it by correspondence analysis.
-
-![image](images/GL_01_hismap.jpg)
-
-
+# Projects
 
 ---
 
-CIFAR-10 classification [[GitHub Page](https://github.com/SuiseiSaika/CIFAR-10_in_Keras)]
+## Multi-Camera Grading System (YOLO-based)
 
 #### Description
-We implemented a VGG16 model in TensorFlow to classify images from the CIFAR-10 dataset, and tried to prevent overfitting in serveral methods. We finally got 93.5% validation accuracy after 1000 epochs train. 
-
-![image](images/C10.jpg)
-
-
+Developed a real-time grading pipeline integrating multi-camera input, oriented bounding box detection, segmentation, multi-process dataflow, and rule-based decision logic.  
+Optimized inference on Jetson Orin NX with TensorRT to achieve stable and low-latency performance.
 
 ---
 
-[DL-VoiceChanger](https://github.com/SuiseiSaika/DL-VoiceChanger)
-
-![image](images/loss.png)
-![image](images/g_loss.png)
+## Retrieval-Augmented Question Answering (RAG)
 
 #### Description
-The purpose of this project was to convert one's voice to another's. We tried to use CycleGAN model with U-Net structure for generator model and ResNet structure for discriminator model. The project is still ongoing.
+Built a retrieval-augmented QA pipeline combining embedding models, ChromaDB retrieval, MMR selection, and multiple open-source LLMs.  
+Experimented with Llama, Gemma, and Phi models using unified prompt templates for consistent evaluation.
 
 ---
 
-### Practice
-[MNIST classification](https://github.com/SuiseiSaika/TF2G_MNIST)
+## Large Language Model Re-ranking for Misconception Detection (Kaggle)
 
-[Fashion_MNIST classification](https://github.com/SuiseiSaika/TF2G_Fashion_MNIST)
+#### Description
+Implemented an LLM-based re-ranking system using Qwen2.5-32B Instruct (AWQ) deployed with vLLM.  
+Designed constrained decoding and scoring mechanisms to refine multiple-choice prediction reliability.
 
-[IMDb classification](https://github.com/SuiseiSaika/TF2G_IMDb/blob/master/TF2G_IMDb_RNN.ipynb)
+---
 
-[Generative adversarial network(Ongoing)]
+## BERT-Based Multi-Output Learning
+
+#### Description
+Constructed a multi-output architecture using BERT to simultaneously predict regression and classification targets.  
+Designed task-specific preprocessing workflows and explored loss balancing strategies.
+
+---
+
+## Sequence Modeling for Arithmetic Expressions
+
+#### Description
+Trained seq2seq and LSTM-based models to interpret arithmetic expressions as structured sequences.  
+Built a tokenization and dataset generation pipeline to evaluate model generalization.
+
+---
+
+## Language-Guided Image Anomaly Detection
+
+#### Description
+Explored a language-conditioned feature alignment method combining image encodings, text prompts, and a mask estimation branch.  
+Investigated domain-shift robustness using language-guided anomaly localization.
+
+---
+
+# Skillset
+
+---
+
+### Programming Languages
+- Python  
+- Java  
+- JavaScript  
+- SQL  
+
+---
+
+### Deep Learning / Machine Learning
+- PyTorch, TensorFlow, Keras  
+- YOLO (Detection / Segmentation / OBB)  
+- BERT, Seq2Seq, RNN/LSTM  
+- Representation learning and contrastive methods  
+- Model training pipeline construction
+
+---
+
+### Large Language Models
+- Hands-on experience with Llama, Gemma, Phi, Qwen2.5-32B Instruct  
+- Familiar with vLLM, Ollama, RAG architecture  
+- Prompt engineering, decoding strategies, model integration
+
+---
+
+### Computer Vision
+- Multi-camera CV pipeline development  
+- Image preprocessing and post-processing with OpenCV  
+- TensorRT optimization on embedded platforms  
+- Real-time detection/tracking system design
+
+---
+
+### System Engineering
+- Multi-process pipeline coordination  
+- End-to-end inference system integration  
+- GUI development using PySide6  
+- Packaging and environment management (PyInstaller, Conda)
+
+---
+
 
 
 ---
