@@ -1,3 +1,19 @@
+## Machine Learning, Computer Vision & Edge AI Engineer
+
+I build production-oriented AI systems that connect model inference with real-world applications—from multi-camera vision pipelines and YOLO detection, segmentation, and oriented bounding boxes to TensorRT deployment on NVIDIA Jetson and end-to-end system integration.
+
+### Core strengths
+
+- **Real-time computer vision:** Multi-camera pipelines, OpenCV preprocessing and post-processing, and YOLO detection, segmentation, and OBB.
+- **Edge AI deployment:** TensorRT optimization and inference integration on NVIDIA Jetson Orin edge devices.
+- **AI system integration:** Multi-process dataflows, rule-based decision logic, PyQt6-based desktop GUI development, packaging, and environment management.
+
+### Opportunities
+
+Seeking Machine Learning, Computer Vision, Edge AI, or AI System Integration roles focused on end-to-end AI deployment and application integration.
+
+---
+
 # Projects
 
 ---
@@ -6,7 +22,7 @@
 
 #### Description
 Developed a real-time grading pipeline integrating multi-camera input, oriented bounding box detection, segmentation, multi-process dataflow, and rule-based decision logic.  
-Optimized inference on Jetson Orin NX with TensorRT to achieve stable and low-latency performance.
+Optimized inference on NVIDIA Jetson Orin edge devices with TensorRT to achieve stable and low-latency performance.
 
 ---
 
@@ -89,7 +105,7 @@ Investigated domain-shift robustness using language-guided anomaly localization.
 ### System Engineering
 - Multi-process pipeline coordination  
 - End-to-end inference system integration  
-- GUI development using PySide6  
+- PyQt6-based desktop GUI development
 - Packaging and environment management (PyInstaller, Conda)
 
 ---
