@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" role="img" aria-labelledby="t d">
+  <title id="t">Language-guided anomaly detection</title><desc id="d">An image grid with one region highlighted by a text prompt</desc>
+  <rect width="1200" height="675" fill="#edf5f3"/><g fill="#b9d8d6"><rect x="110" y="100" width="225" height="205" rx="22"/><rect x="365" y="100" width="225" height="205" rx="22"/><rect x="110" y="335" width="225" height="205" rx="22"/><rect x="365" y="335" width="225" height="205" rx="22"/></g><rect x="390" y="360" width="175" height="155" rx="18" fill="#f4b860" stroke="#9b5b13" stroke-width="7" stroke-dasharray="18 12"/>
+  <path d="M620 420h120" stroke="#087f8c" stroke-width="11" stroke-linecap="round"/><path d="m715 395 30 25-30 25" fill="none" stroke="#087f8c" stroke-width="11"/>
+  <rect x="770" y="220" width="330" height="195" rx="32" fill="#132238"/><text x="935" y="300" text-anchor="middle" fill="#72d4d5" font-family="Arial" font-size="25">TEXT GUIDANCE</text><text x="935" y="355" text-anchor="middle" fill="#fff" font-family="Arial" font-size="36" font-weight="700">ANOMALY</text>
+</svg>

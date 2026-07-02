@@ -1,0 +1,85 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Hero from '../components/Hero.astro';
+import ProjectCard from '../components/ProjectCard.astro';
+import Timeline from '../components/Timeline.astro';
+import SkillBadge from '../components/SkillBadge.astro';
+import SectionTitle from '../components/SectionTitle.astro';
+import Contact from '../components/Contact.astro';
+import { timeline } from '../data/timeline';
+import { skillGroups } from '../data/skills';
+
+const projects = (await getCollection('projects')).sort((a, b) => a.data.order - b.data.order);
+
+const certifications = [
+  { title: 'Machine Learning', url: 'https://coursera.org/share/97485b47daa8b0543f5d5f850cc35206' },
+  { title: 'Deep Learning', url: 'https://coursera.org/share/99fee14fb34a858f2df4a546f81a44c3' },
+  { title: 'DeepLearning.AI TensorFlow Developer', url: 'https://coursera.org/share/d08708fcd424a0a266835c60f3bde941' },
+];
+---
+
+<BaseLayout>
+  <div class="container">
+    <Hero />
+  </div>
+
+  <section class="section container" id="projects" aria-labelledby="projects-title">
+    <SectionTitle
+      eyebrow="Selected work"
+      title="AI systems from model to application"
+      description="Case studies are backed by the information currently available in the original portfolio. Unknown dates, links, and measurements remain explicitly marked TODO."
+    />
+    <div class="project-grid">
+      {projects.map((project) => <ProjectCard project={project} />)}
+    </div>
+  </section>
+
+  <section class="section section-tinted" id="timeline" aria-labelledby="timeline-title">
+    <div class="container">
+      <SectionTitle
+        eyebrow="Experience timeline"
+        title="Technical focus over time"
+        description="The component supports dated milestones; years remain TODO until verified."
+      />
+      <Timeline items={timeline} />
+    </div>
+  </section>
+
+  <section class="section container" id="skills" aria-labelledby="skills-title">
+    <SectionTitle
+      eyebrow="Technical toolkit"
+      title="Skills grounded in project work"
+      description="A focused view of the tools and systems represented across the portfolio."
+    />
+    <div class="skill-groups">
+      {skillGroups.map((group) => (
+        <article class="skill-group reveal">
+          <h3>{group.title}</h3>
+          <div class="skill-cloud">
+            {group.skills.map((skill) => <SkillBadge label={skill} />)}
+          </div>
+        </article>
+      ))}
+    </div>
+  </section>
+
+  <section class="section section-tinted" aria-labelledby="certifications-title">
+    <div class="container">
+      <SectionTitle eyebrow="Verified learning" title="Certifications" />
+      <div class="certification-grid">
+        {certifications.map((certification) => (
+          <a class="certification-card reveal" href={certification.url}>
+            <span>Coursera certificate</span>
+            <strong>{certification.title}</strong>
+            <span aria-hidden="true">View credential ↗</span>
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="section container">
+    <Contact />
+  </section>
+</BaseLayout>

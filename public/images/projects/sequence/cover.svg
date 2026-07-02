@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" role="img" aria-labelledby="t d">
+  <title id="t">Arithmetic sequence modeling</title><desc id="d">Arithmetic tokens flow through recurrent sequence cells</desc>
+  <rect width="1200" height="675" fill="#10283c"/>
+  <g font-family="monospace" font-size="54" font-weight="700" text-anchor="middle"><g fill="#dff3f2"><rect x="80" y="267" width="100" height="100" rx="18"/><rect x="210" y="267" width="100" height="100" rx="18"/><rect x="340" y="267" width="100" height="100" rx="18"/></g><text x="130" y="337" fill="#132238">7</text><text x="260" y="337" fill="#132238">+</text><text x="390" y="337" fill="#132238">5</text></g>
+  <path d="M470 317h130" stroke="#72d4d5" stroke-width="10"/><g fill="#087f8c"><circle cx="680" cy="317" r="85"/><circle cx="850" cy="317" r="85"/></g><path d="M765 317h0" stroke="#f4b860" stroke-width="14"/><text x="680" y="330" text-anchor="middle" fill="#fff" font-family="Arial" font-size="28">LSTM</text><text x="850" y="330" text-anchor="middle" fill="#fff" font-family="Arial" font-size="28">SEQ</text><text x="1040" y="338" text-anchor="middle" fill="#f4b860" font-family="monospace" font-size="64" font-weight="800">12</text>
+</svg>

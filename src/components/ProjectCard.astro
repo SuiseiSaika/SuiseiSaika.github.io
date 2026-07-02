@@ -1,0 +1,42 @@
+---
+import type { CollectionEntry } from 'astro:content';
+import { withBase } from '../utils/paths';
+
+interface Props {
+  project: CollectionEntry<'projects'>;
+}
+
+const { project } = Astro.props;
+const href = withBase(`/projects/${project.id}/`);
+---
+
+<article class="project-card reveal">
+  <a class="project-image" href={href} aria-label={`Read ${project.data.title} case study`}>
+    <img src={withBase(project.data.image)} alt={project.data.imageAlt} loading="lazy" width="1200" height="675" />
+  </a>
+  <div class="project-content">
+    <div class="project-meta">
+      <span>{project.data.status}</span>
+      <span>{project.data.year}</span>
+    </div>
+    <h3><a href={href}>{project.data.title}</a></h3>
+    <p>{project.data.summary}</p>
+    <ul class="tag-list" aria-label="Technologies">
+      {project.data.tags.map((tag) => <li>{tag}</li>)}
+    </ul>
+    {project.data.metrics.length > 0 && (
+      <dl class="metric-list">
+        {project.data.metrics.map((metric) => (
+          <div>
+            <dt>{metric.label}</dt>
+            <dd class:list={{ todo: metric.value === 'TODO' }}>{metric.value}</dd>
+          </div>
+        ))}
+      </dl>
+    )}
+    <div class="card-links">
+      <a class="text-link" href={href}>Case study <span aria-hidden="true">→</span></a>
+      {project.data.links.map((link) => <a class="text-link" href={link.url}>{link.label} <span aria-hidden="true">↗</span></a>)}
+    </div>
+  </div>
+</article>

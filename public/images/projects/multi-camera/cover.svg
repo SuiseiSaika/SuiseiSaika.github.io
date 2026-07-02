@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" role="img" aria-labelledby="t d">
+  <title id="t">Multi-camera grading system</title><desc id="d">A stylized diagram with four camera feeds connected to an edge AI processor</desc>
+  <defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#10283c"/><stop offset="1" stop-color="#087f8c"/></linearGradient></defs>
+  <rect width="1200" height="675" fill="url(#g)"/>
+  <g fill="none" stroke="#72d4d5" stroke-width="7" opacity=".8"><path d="M250 180 520 300M250 495 520 375M950 180 680 300M950 495 680 375"/></g>
+  <g fill="#dff3f2"><rect x="130" y="110" width="220" height="140" rx="20"/><rect x="130" y="425" width="220" height="140" rx="20"/><rect x="850" y="110" width="220" height="140" rx="20"/><rect x="850" y="425" width="220" height="140" rx="20"/></g>
+  <rect x="480" y="245" width="240" height="185" rx="28" fill="#f4b860"/><text x="600" y="335" text-anchor="middle" fill="#132238" font-family="Arial" font-size="36" font-weight="700">EDGE AI</text><text x="600" y="380" text-anchor="middle" fill="#132238" font-family="Arial" font-size="24">YOLO · TensorRT</text>
+</svg>

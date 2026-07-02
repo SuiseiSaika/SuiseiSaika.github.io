@@ -1,0 +1,64 @@
+---
+import '../styles/global.css';
+import { withBase } from '../utils/paths';
+
+interface Props {
+  title?: string;
+  description?: string;
+  image?: string;
+}
+
+const {
+  title = 'Chang Shuo (Johnson) Chen | ML, Computer Vision & Edge AI',
+  description = 'Portfolio of Chang Shuo (Johnson) Chen, focused on Machine Learning, Computer Vision, Edge AI, and AI System Integration.',
+  image = '/images/og-cover.svg',
+} = Astro.props;
+
+const canonical = new URL(Astro.url.pathname, Astro.site ?? Astro.url.origin);
+const socialImage = new URL(withBase(image), Astro.site ?? Astro.url.origin);
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="description" content={description} />
+    <meta name="generator" content={Astro.generator} />
+    <link rel="canonical" href={canonical} />
+    <link rel="icon" href={withBase('/favicon.svg')} type="image/svg+xml" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={canonical} />
+    <meta property="og:image" content={socialImage} />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={socialImage} />
+    <title>{title}</title>
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
+    <header class="site-header">
+      <nav class="site-nav container" aria-label="Primary navigation">
+        <a class="brand" href={withBase('/')} aria-label="Chang Shuo Johnson Chen home">JC<span>.</span></a>
+        <div class="nav-links">
+          <a href={withBase('/#projects')}>Projects</a>
+          <a href={withBase('/#timeline')}>Timeline</a>
+          <a href={withBase('/#skills')}>Skills</a>
+          <a href={withBase('/#contact')}>Contact</a>
+        </div>
+      </nav>
+    </header>
+    <main id="main-content">
+      <slot />
+    </main>
+    <footer class="site-footer">
+      <div class="container footer-content">
+        <p>Chang Shuo (Johnson) Chen · Machine Learning / Computer Vision Engineer</p>
+        <a href="#top">Back to top ↑</a>
+      </div>
+    </footer>
+  </body>
+</html>

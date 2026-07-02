@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" role="img" aria-labelledby="t d">
+  <title id="t">PyQt6 AI inference GUI</title><desc id="d">A stylized desktop AI application interface</desc>
+  <rect width="1200" height="675" fill="#e8f4f4"/>
+  <rect x="115" y="82" width="970" height="510" rx="28" fill="#fff" stroke="#8bbfc1" stroke-width="4"/>
+  <rect x="115" y="82" width="970" height="66" rx="28" fill="#132238"/><circle cx="164" cy="115" r="10" fill="#f4b860"/>
+  <rect x="155" y="190" width="610" height="345" rx="18" fill="#132238"/><rect x="795" y="190" width="250" height="76" rx="14" fill="#dff3f2"/><rect x="795" y="288" width="250" height="76" rx="14" fill="#dff3f2"/><rect x="795" y="386" width="250" height="149" rx="14" fill="#087f8c"/>
+  <rect x="267" y="260" width="390" height="205" rx="18" fill="none" stroke="#72d4d5" stroke-width="7" stroke-dasharray="18 12"/><text x="462" y="375" text-anchor="middle" fill="#dff3f2" font-family="Arial" font-size="32">INFERENCE VIEW</text>
+</svg>
