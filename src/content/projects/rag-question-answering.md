@@ -1,7 +1,7 @@
 ---
-title: "Retrieval-Augmented Question Answering"
+title: "RAG Question Answering"
 summary: "A retrieval-augmented QA pipeline using embeddings, ChromaDB, MMR selection, and multiple open-source language models."
-order: 3
+order: 2
 year: "TODO"
 status: "Implemented"
 featured: true

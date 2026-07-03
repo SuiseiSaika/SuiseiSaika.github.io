@@ -1,10 +1,10 @@
 ---
-title: "BERT-Based Multi-Output Learning"
+title: "BERT Multi-output Learning"
 summary: "A BERT architecture trained to predict regression and classification targets together with task-specific preprocessing and loss balancing experiments."
-order: 5
+order: 4
 year: "TODO"
 status: "Implemented"
-featured: false
+featured: true
 image: "/images/projects/bert/cover.svg"
 imageAlt: "Abstract shared BERT encoder branching into regression and classification outputs"
 tags:

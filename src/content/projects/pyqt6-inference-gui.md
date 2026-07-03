@@ -1,10 +1,10 @@
 ---
 title: "PyQt6 AI Inference Desktop GUI"
 summary: "A PyQt6-based desktop GUI used in AI system integration work. Workflow details, screenshots, and measurable outcomes are pending confirmation."
-order: 2
+order: 6
 year: "TODO"
 status: "Details pending"
-featured: true
+featured: false
 image: "/images/projects/gui/cover.svg"
 imageAlt: "Abstract desktop interface for an AI inference application"
 tags:

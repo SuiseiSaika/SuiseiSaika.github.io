@@ -1,5 +1,5 @@
 ---
-title: "Multi-Camera Product Grading System"
+title: "Real-time Multi-source Product Grading System"
 summary: "A real-time grading pipeline combining multi-camera input, YOLO-based detection and segmentation, multiprocessing, and rule-based decisions."
 order: 1
 year: "TODO"

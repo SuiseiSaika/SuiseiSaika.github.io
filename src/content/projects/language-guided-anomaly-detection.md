@@ -1,7 +1,7 @@
 ---
 title: "Language-Guided Image Anomaly Detection"
 summary: "An exploration of language-conditioned feature alignment for image anomaly localization under domain shift."
-order: 7
+order: 8
 year: "TODO"
 status: "Exploration"
 featured: false

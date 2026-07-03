@@ -22,7 +22,7 @@ export const timeline: TimelineItem[] = [
   },
   {
     year: 'TODO',
-    event: 'LLM re-ranking for misconception detection',
+    event: 'Qwen retrieval & tournament reranking',
     description:
       'Implemented constrained decoding and scoring with an AWQ-quantized Qwen2.5-32B model served through vLLM.',
     technologies: ['Qwen2.5-32B', 'AWQ', 'vLLM', 'Constrained decoding'],

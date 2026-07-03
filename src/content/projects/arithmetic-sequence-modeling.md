@@ -1,7 +1,7 @@
 ---
 title: "Sequence Modeling for Arithmetic Expressions"
 summary: "A sequence-learning experiment using seq2seq and LSTM models, custom tokenization, and generated datasets for arithmetic expressions."
-order: 6
+order: 7
 year: "TODO"
 status: "Implemented"
 featured: false

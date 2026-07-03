@@ -1,38 +1,66 @@
 ---
-title: "LLM Re-ranking for Misconception Detection"
-summary: "A Kaggle-oriented re-ranking system using Qwen2.5-32B Instruct (AWQ), vLLM, constrained decoding, and custom scoring."
-order: 4
+title: "Qwen Retrieval & Tournament Reranking"
+summary: "Adapted a public Qwen14B retrieval and Qwen32B reranking notebook for mathematical misconception mining. Expanded retrieval from 25 to 41 candidates and redesigned the reranking tournament from three broad rounds to thirteen focused rounds. Kaggle platform UI indicated a higher score compared to the reference notebook; public version links and screenshots are pending."
+order: 5
 year: "TODO"
-status: "Implemented"
-featured: true
+status: "Secondary · Close to featured-ready"
+featured: false
 image: "/images/projects/reranking/cover.svg"
-imageAlt: "Abstract ranked list and language model scoring visualization"
+imageAlt: "Abstract retrieval pool narrowing through an iterative tournament reranker"
 tags:
-  - "Qwen2.5-32B"
-  - "AWQ"
-  - "vLLM"
+  - "Qwen14B"
+  - "Qwen32B"
+  - "Retrieval"
+  - "Tournament reranking"
   - "Constrained decoding"
   - "Kaggle"
 metrics:
-  - label: "Competition score"
-    value: "TODO"
-  - label: "Final rank"
-    value: "TODO"
-links: []
+  - label: "Portfolio placement"
+    value: "Strong secondary"
+  - label: "Result evidence"
+    value: "Kaggle platform UI"
+links:
+  - label: "Reference notebook"
+    url: "https://www.kaggle.com/code/jagatkiran/qwen14b-retrieval-qwen32b-logits-processor-zoo/notebook"
 ---
 
 ## Overview
 
-Implemented an LLM-based re-ranking system using Qwen2.5-32B Instruct (AWQ) deployed with vLLM.
+Adapted a public two-stage retrieval and reranking pipeline for identifying mathematical misconceptions behind students' incorrect answers. The retained architecture uses Qwen14B for candidate retrieval and Qwen32B with constrained decoding for reranking.
 
-Designed constrained decoding and scoring mechanisms to refine multiple-choice prediction reliability.
+## Attribution
+
+This work was adapted from and built upon the public [Qwen14B retrieval and Qwen32B reranking notebook by jagatkiran](https://www.kaggle.com/code/jagatkiran/qwen14b-retrieval-qwen32b-logits-processor-zoo/notebook).
+
+The full pipeline is not presented as original work. This case study focuses on the changes made to candidate retrieval, tournament structure, prompting, and experiment configuration.
 
 ## Contribution
 
-- Deployed an AWQ-quantized Qwen2.5-32B Instruct model with vLLM.
-- Designed constrained decoding and scoring for multiple-choice re-ranking.
+- Expanded the retrieval pool from 25 to 41 candidates.
+- Redesigned the reranking tournament from 3 rounds × 8 candidates to 13 rounds × 3 candidates.
+- Refined the prompt used to identify the misconception behind an incorrect answer.
+- Compared prompt and reranking configurations in the team report.
+- Completed successful end-to-end retrieval, reranking, and submission generation.
 
-## Evidence to add
+## Result
 
-- TODO: Add the competition URL, notebook or repository, score, and final rank.
-- TODO: Explain the validation design and any measurable gain from re-ranking.
+According to the Kaggle platform UI, the adapted notebook achieved a higher score than the reference notebook.
+
+This is presented as a platform-observed comparison, not a locally reproduced benchmark. Public screenshots and notebook-version links should be added for verification.
+
+The score difference is not presented as proof that any single modification caused the result.
+
+## Limitations
+
+- Public verification links are pending.
+- An individual contribution statement is pending.
+- A version-matched ablation chain is pending.
+- The score difference should not be attributed solely to one modification.
+- The raw team PDF should not be linked publicly until personal information is removed.
+- The raw notebook is not linked because attribution and output cleanup have not yet been completed in a public-safe copy.
+
+## Portfolio status
+
+**Strong secondary · Platform score evidence**
+
+The project is close to featured-ready, but remains outside the featured set until its public evidence and individual contribution statement are complete.

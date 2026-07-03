@@ -11,6 +11,8 @@ import { timeline } from '../data/timeline';
 import { skillGroups } from '../data/skills';
 
 const projects = (await getCollection('projects')).sort((a, b) => a.data.order - b.data.order);
+const featuredProjects = projects.filter((project) => project.data.featured);
+const secondaryProjects = projects.filter((project) => !project.data.featured);
 
 const certifications = [
   { title: 'Machine Learning', url: 'https://coursera.org/share/97485b47daa8b0543f5d5f850cc35206' },
@@ -28,10 +30,23 @@ const certifications = [
     <SectionTitle
       eyebrow="Selected work"
       title="AI systems from model to application"
-      description="Case studies are backed by the information currently available in the original portfolio. Unknown dates, links, and measurements remain explicitly marked TODO."
+      description="Four featured case studies spanning real-time AI systems, retrieval-augmented generation, domain-shift detection, and multi-output learning."
     />
     <div class="project-grid">
-      {projects.map((project) => <ProjectCard project={project} />)}
+      {featuredProjects.map((project) => <ProjectCard project={project} />)}
+    </div>
+  </section>
+
+  <section class="section section-tinted" id="secondary-projects" aria-labelledby="secondary-projects-title">
+    <div class="container">
+      <SectionTitle
+        eyebrow="Additional work"
+        title="Secondary projects and focused experiments"
+        description="Supporting case studies with meaningful implementation evidence and clearly marked verification gaps."
+      />
+      <div class="project-grid">
+        {secondaryProjects.map((project) => <ProjectCard project={project} />)}
+      </div>
     </div>
   </section>
 
