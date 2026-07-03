@@ -20,8 +20,10 @@ metrics:
   - label: "Result evidence"
     value: "Kaggle platform UI"
 links:
-  - label: "Reference notebook"
-    url: "https://www.kaggle.com/code/jagatkiran/qwen14b-retrieval-qwen32b-logits-processor-zoo/notebook"
+  - label: "Case Study"
+    url: "https://github.com/SuiseiSaika/ai-portfolio-case-studies/tree/main/case-studies/nlp/qwen-tournament-reranking.md"
+  - label: "Cleaned Implementation"
+    url: "https://github.com/SuiseiSaika/ai-portfolio-case-studies/tree/main/src/nlp_showcase/qwen_reranking"
 ---
 
 ## Overview
@@ -30,7 +32,7 @@ Adapted a public two-stage retrieval and reranking pipeline for identifying math
 
 ## Attribution
 
-This work was adapted from and built upon the public [Qwen14B retrieval and Qwen32B reranking notebook by jagatkiran](https://www.kaggle.com/code/jagatkiran/qwen14b-retrieval-qwen32b-logits-processor-zoo/notebook).
+This team project was adapted from and built upon the public Qwen14B retrieval and Qwen32B reranking notebook by Kaggle user `jagatkiran`.
 
 The full pipeline is not presented as original work. This case study focuses on the changes made to candidate retrieval, tournament structure, prompting, and experiment configuration.
 
@@ -57,7 +59,7 @@ The score difference is not presented as proof that any single modification caus
 - A version-matched ablation chain is pending.
 - The score difference should not be attributed solely to one modification.
 - The raw team PDF should not be linked publicly until personal information is removed.
-- The raw notebook is not linked because attribution and output cleanup have not yet been completed in a public-safe copy.
+- The raw notebook remains unlinked while attribution and output cleanup are incomplete in a public-safe copy.
 
 ## Portfolio status
 

@@ -1,6 +1,6 @@
 ---
 title: "RAG Question Answering"
-summary: "A retrieval-augmented QA pipeline using embeddings, ChromaDB, MMR selection, and multiple open-source language models."
+summary: "Implemented and evaluated a retrieval-augmented QA pipeline across embedding models, open-source LLMs, and prompt variants."
 order: 2
 year: "TODO"
 status: "Implemented"
@@ -15,18 +15,20 @@ tags:
   - "Gemma"
   - "Phi"
 metrics:
-  - label: "Corpus size"
-    value: "TODO"
-  - label: "Retrieval quality"
-    value: "TODO"
-  - label: "Answer quality"
-    value: "TODO"
-links: []
+  - label: "Best RAG result"
+    value: "9/10"
+  - label: "No-RAG baseline"
+    value: "4/10"
+links:
+  - label: "Case Study"
+    url: "https://github.com/SuiseiSaika/ai-portfolio-case-studies/tree/main/case-studies/nlp/rag-question-answering.md"
+  - label: "Cleaned Implementation"
+    url: "https://github.com/SuiseiSaika/ai-portfolio-case-studies/tree/main/src/nlp_showcase/rag"
 ---
 
 ## Overview
 
-Built a retrieval-augmented QA pipeline combining embedding models, ChromaDB retrieval, MMR selection, and multiple open-source LLMs.
+Built a retrieval-augmented QA pipeline combining embedding models, ChromaDB retrieval, MMR selection, and multiple open-source LLMs for a course assignment.
 
 Experimented with Llama, Gemma, and Phi models using unified prompt templates for consistent evaluation.
 
@@ -34,9 +36,16 @@ Experimented with Llama, Gemma, and Phi models using unified prompt templates fo
 
 - Integrated embedding, vector retrieval, and MMR selection stages.
 - Used unified prompt templates to compare multiple open-source models consistently.
+- Evaluated embedding, generator, and prompt configurations against a no-RAG baseline.
 
-## Evidence to add
+## Results and scope
 
-- TODO: Document the corpus, evaluation set, and retrieval parameters.
-- TODO: Add retrieval and answer-quality measurements.
-- TODO: Link source code or a runnable demo if it can be published.
+The best reported RAG configuration answered **9/10** course-defined questions correctly, compared with **4/10** for the no-RAG baseline. The evaluation set was small, so these results support a course-scale comparison rather than a production RAG claim.
+
+The public showcase reconstructs chunking, dense retrieval, prompt construction, citation records, and paired evaluation with deterministic synthetic text. It is separate from the original course environment.
+
+## Limitations
+
+- The evaluation used 10 course-defined questions.
+- No production latency or cost benchmark has been completed.
+- No large-scale retrieval benchmark or production validation has been completed.

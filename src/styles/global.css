@@ -645,6 +645,10 @@ h3 {
   font-size: 1.16rem;
 }
 
+.case-links {
+  margin-top: 24px;
+}
+
 .case-header img {
   width: 100%;
   border: 1px solid var(--line);
