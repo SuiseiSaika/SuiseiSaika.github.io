@@ -19,9 +19,9 @@ metrics:
   - label: "Best mAP@0.5:0.95"
     value: "0.521"
 links:
-  - label: "Case Study"
+  - label: "Showcase Case Study"
     url: "https://github.com/SuiseiSaika/ai-portfolio-case-studies/tree/main/case-studies/computer-vision/domain-shift-object-detection.md"
-  - label: "Cleaned Implementation"
+  - label: "Cleaned Code"
     url: "https://github.com/SuiseiSaika/ai-portfolio-case-studies/tree/main/src/cv_showcase/domain_shift"
 ---
 

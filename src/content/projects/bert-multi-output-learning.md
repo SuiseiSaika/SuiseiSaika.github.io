@@ -18,9 +18,9 @@ metrics:
   - label: "Test accuracy"
     value: "0.8815"
 links:
-  - label: "Case Study"
+  - label: "Showcase Case Study"
     url: "https://github.com/SuiseiSaika/ai-portfolio-case-studies/tree/main/case-studies/nlp/bert-multi-output-learning.md"
-  - label: "Cleaned Implementation"
+  - label: "Cleaned Code"
     url: "https://github.com/SuiseiSaika/ai-portfolio-case-studies/tree/main/src/nlp_showcase/bert_multi_output"
 ---
 

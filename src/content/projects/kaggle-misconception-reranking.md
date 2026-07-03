@@ -1,10 +1,10 @@
 ---
 title: "Qwen Retrieval & Tournament Reranking"
-summary: "Adapted a public Qwen14B retrieval and Qwen32B reranking notebook for mathematical misconception mining. Expanded retrieval from 25 to 41 candidates and redesigned the reranking tournament from three broad rounds to thirteen focused rounds. Kaggle platform UI indicated a higher score compared to the reference notebook; public version links and screenshots are pending."
-order: 5
+summary: "Adapted a public Qwen retrieval/reranking pipeline for mathematical misconception mining, expanding retrieval from 25 to 41 candidates and redesigning the tournament from three broad rounds to thirteen focused rounds. Kaggle private score: 0.45365."
+order: 2
 year: "TODO"
-status: "Secondary · Close to featured-ready"
-featured: false
+status: "Featured · Team course project"
+featured: true
 image: "/images/projects/reranking/cover.svg"
 imageAlt: "Abstract retrieval pool narrowing through an iterative tournament reranker"
 tags:
@@ -15,14 +15,14 @@ tags:
   - "Constrained decoding"
   - "Kaggle"
 metrics:
-  - label: "Portfolio placement"
-    value: "Strong secondary"
-  - label: "Result evidence"
-    value: "Kaggle platform UI"
+  - label: "Kaggle private score"
+    value: "0.45365"
+  - label: "Reference score"
+    value: "0.43370"
 links:
-  - label: "Case Study"
+  - label: "Showcase Case Study"
     url: "https://github.com/SuiseiSaika/ai-portfolio-case-studies/tree/main/case-studies/nlp/qwen-tournament-reranking.md"
-  - label: "Cleaned Implementation"
+  - label: "Cleaned Code"
     url: "https://github.com/SuiseiSaika/ai-portfolio-case-studies/tree/main/src/nlp_showcase/qwen_reranking"
 ---
 
@@ -32,7 +32,7 @@ Adapted a public two-stage retrieval and reranking pipeline for identifying math
 
 ## Attribution
 
-This team project was adapted from and built upon the public Qwen14B retrieval and Qwen32B reranking notebook by Kaggle user `jagatkiran`.
+Adapted from jagatkiran's public Qwen retrieval/reranking notebook. This work was completed in a team course-project context.
 
 The full pipeline is not presented as original work. This case study focuses on the changes made to candidate retrieval, tournament structure, prompting, and experiment configuration.
 
@@ -46,23 +46,25 @@ The full pipeline is not presented as original work. This case study focuses on 
 
 ## Result
 
-According to the Kaggle platform UI, the adapted notebook achieved a higher score than the reference notebook.
+The adapted pipeline received a Kaggle private score of **0.45365**. The referenced public notebook score observed on Kaggle was **0.43370**.
 
-This is presented as a platform-observed comparison, not a locally reproduced benchmark. Public screenshots and notebook-version links should be added for verification.
+These are platform-observed scores, not a locally reproduced benchmark. Public verification links and screenshots remain pending.
 
 The score difference is not presented as proof that any single modification caused the result.
 
 ## Limitations
 
 - Public verification links are pending.
+- This was a team course project adapted from an existing public pipeline, not a fully original pipeline.
 - An individual contribution statement is pending.
-- A version-matched ablation chain is pending.
+- A controlled ablation chain is pending.
 - The score difference should not be attributed solely to one modification.
+- The comparison does not support a state-of-the-art claim.
 - The raw team PDF should not be linked publicly until personal information is removed.
 - The raw notebook remains unlinked while attribution and output cleanup are incomplete in a public-safe copy.
 
 ## Portfolio status
 
-**Strong secondary · Platform score evidence**
+**Featured · Platform-observed score evidence**
 
-The project is close to featured-ready, but remains outside the featured set until its public evidence and individual contribution statement are complete.
+The project is featured for its retrieval and reranking implementation work; public score verification and an individual contribution statement remain pending.

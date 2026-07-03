@@ -11,7 +11,7 @@ const href = withBase(`/projects/${project.id}/`);
 ---
 
 <article class="project-card reveal">
-  <a class="project-image" href={href} aria-label={`Read ${project.data.title} case study`}>
+  <a class="project-image" href={href} aria-label={`Open ${project.data.title} project brief`}>
     <img src={withBase(project.data.image)} alt={project.data.imageAlt} loading="lazy" width="1200" height="675" />
   </a>
   <div class="project-content">
@@ -35,7 +35,7 @@ const href = withBase(`/projects/${project.id}/`);
       </dl>
     )}
     <div class="card-links">
-      <a class="text-link" href={href}>Case study <span aria-hidden="true">→</span></a>
+      <a class="text-link" href={href}>Project Brief <span aria-hidden="true">→</span></a>
       {project.data.links.map((link) => <a class="text-link" href={link.url}>{link.label} <span aria-hidden="true">↗</span></a>)}
     </div>
   </div>

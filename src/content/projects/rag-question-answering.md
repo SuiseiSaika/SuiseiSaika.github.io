@@ -1,10 +1,10 @@
 ---
 title: "RAG Question Answering"
 summary: "Implemented and evaluated a retrieval-augmented QA pipeline across embedding models, open-source LLMs, and prompt variants."
-order: 2
+order: 5
 year: "TODO"
-status: "Implemented"
-featured: true
+status: "Secondary · Course evaluation prototype"
+featured: false
 image: "/images/projects/rag/cover.svg"
 imageAlt: "Abstract retrieval and language model pipeline"
 tags:
@@ -20,9 +20,9 @@ metrics:
   - label: "No-RAG baseline"
     value: "4/10"
 links:
-  - label: "Case Study"
+  - label: "Showcase Case Study"
     url: "https://github.com/SuiseiSaika/ai-portfolio-case-studies/tree/main/case-studies/nlp/rag-question-answering.md"
-  - label: "Cleaned Implementation"
+  - label: "Cleaned Code"
     url: "https://github.com/SuiseiSaika/ai-portfolio-case-studies/tree/main/src/nlp_showcase/rag"
 ---
 

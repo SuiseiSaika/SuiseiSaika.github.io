@@ -22,7 +22,7 @@ metrics:
   - label: "Model accuracy"
     value: "TODO"
 links:
-  - label: "Case Study"
+  - label: "Showcase Case Study"
     url: "https://github.com/SuiseiSaika/ai-portfolio-case-studies/tree/main/case-studies/private-systems/multi-source-product-grading.md"
 ---
 

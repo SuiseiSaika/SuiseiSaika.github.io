@@ -19,9 +19,9 @@ metrics:
   - label: "ECG200 ROC AUC"
     value: "0.947917"
 links:
-  - label: "Case Study"
+  - label: "Showcase Case Study"
     url: "https://github.com/SuiseiSaika/ai-portfolio-case-studies/tree/main/case-studies/anomaly-detection/time-series-anomaly-detection.md"
-  - label: "Cleaned Implementation"
+  - label: "Cleaned Code"
     url: "https://github.com/SuiseiSaika/ai-portfolio-case-studies/tree/main/src/anomaly_showcase/timeseries"
 ---
 
