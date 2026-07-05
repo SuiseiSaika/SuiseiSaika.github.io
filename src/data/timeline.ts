@@ -15,10 +15,10 @@ export const timeline: TimelineItem[] = [
   },
   {
     year: '2024',
-    event: 'Qwen retrieval & tournament reranking',
+    event: 'Qwen reranking experiment design',
     description:
-      'Led experiment planning and task coordination, expanded retrieval from 25 to 41 candidates, and redesigned the tournament schedule.',
-    technologies: ['Qwen', 'Retrieval', 'Tournament reranking', 'Experiment planning'],
+      'Designed and coordinated the reranking experiment structure, expanded candidate coverage from 25 to 41, and studied choice-set effects through a redesigned tournament.',
+    technologies: ['Qwen', 'Reranking', 'Candidate coverage', 'Tournament design'],
   },
   {
     year: '2024',
