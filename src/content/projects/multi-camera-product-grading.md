@@ -34,6 +34,12 @@ Public architecture detail remains conceptual. Target hardware includes Jetson O
 - Handled RS232 software-side integration and validation.
 - Contributed testing and Jetson demo preparation.
 
+## Control Plane / GUI
+
+Built a PyQt6 operator-facing control plane for launching and monitoring inference workflows, managing runtime configuration, selecting sources, controlling external processes, viewing logs, and navigating generated results.
+
+The GUI provides software-side process control for the private inference runtime, including launch/stop actions, configuration editing, log visibility, and result navigation. This is a sanitized subsystem description; public screenshots and detailed operator-workflow evidence remain pending.
+
 ## Team boundary
 
 RS232 hardware/device-side signal transfer and equipment handling were completed by other team members.
@@ -43,4 +49,5 @@ RS232 hardware/device-side signal transfer and equipment handling were completed
 The linked material is a sanitized technical case study. It does not expose raw runtime or GUI repositories, private implementation details, or unverified operational measurements.
 
 - Public screenshots may be added after disclosure review.
+- Detailed operator-workflow evidence remains pending public review.
 - FPS, latency, accuracy, Jetson, and deployment benchmarks remain pending public verification.
