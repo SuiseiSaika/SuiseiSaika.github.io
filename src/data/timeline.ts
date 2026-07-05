@@ -7,24 +7,24 @@ export interface TimelineItem {
 
 export const timeline: TimelineItem[] = [
   {
-    year: 'TODO',
+    year: '2025–2026',
     event: 'Multi-camera product grading system',
     description:
-      'Integrated multi-camera input, oriented object detection, segmentation, multiprocessing, and rule-based grading logic.',
-    technologies: ['YOLO', 'TensorRT', 'OpenCV', 'NVIDIA Jetson Orin'],
+      'Contributed to runtime, tracking, a PyQt6 control plane, RS232 software-side integration, configuration, testing, and Jetson demo preparation.',
+    technologies: ['PyQt6', 'RS232', 'Jetson Orin Nano 8G', 'Intel RealSense D435'],
   },
   {
-    year: 'TODO',
-    event: 'Retrieval-augmented question answering',
-    description:
-      'Combined embedding models, ChromaDB retrieval, MMR selection, and multiple open-source language models.',
-    technologies: ['ChromaDB', 'MMR', 'Llama', 'Gemma', 'Phi'],
-  },
-  {
-    year: 'TODO',
+    year: '2024',
     event: 'Qwen retrieval & tournament reranking',
     description:
-      'Implemented constrained decoding and scoring with an AWQ-quantized Qwen2.5-32B model served through vLLM.',
-    technologies: ['Qwen2.5-32B', 'AWQ', 'vLLM', 'Constrained decoding'],
+      'Led experiment planning and task coordination, expanded retrieval from 25 to 41 candidates, and redesigned the tournament schedule.',
+    technologies: ['Qwen', 'Retrieval', 'Tournament reranking', 'Experiment planning'],
+  },
+  {
+    year: '2024',
+    event: 'Retrieval-augmented question answering',
+    description:
+      'Compared embedding models, open-source language models, and prompt variants against a no-RAG baseline.',
+    technologies: ['ChromaDB', 'MMR', 'Llama', 'Gemma', 'Phi'],
   },
 ];

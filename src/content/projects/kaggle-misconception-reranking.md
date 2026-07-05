@@ -1,9 +1,9 @@
 ---
 title: "Qwen Retrieval & Tournament Reranking"
-summary: "Adapted a public Qwen retrieval/reranking pipeline for mathematical misconception mining, expanding retrieval from 25 to 41 candidates and redesigning the tournament from three broad rounds to thirteen focused rounds. Kaggle private score: 0.45365."
+summary: "Led experiment planning and task coordination for a team course project adapting a public Qwen retrieval/reranking pipeline, expanding retrieval from 25 to 41 candidates and redesigning its tournament."
 order: 2
-year: "TODO"
-status: "Featured · Team course project"
+year: "2024"
+status: "Team course project · Featured"
 featured: true
 image: "/images/projects/reranking/cover.svg"
 imageAlt: "Abstract retrieval pool narrowing through an iterative tournament reranker"
@@ -28,43 +28,40 @@ links:
 
 ## Overview
 
-Adapted a public two-stage retrieval and reranking pipeline for identifying mathematical misconceptions behind students' incorrect answers. The retained architecture uses Qwen14B for candidate retrieval and Qwen32B with constrained decoding for reranking.
+In this 2024 team course project, we adapted a public two-stage retrieval and reranking pipeline for identifying mathematical misconceptions behind students' incorrect answers.
 
 ## Attribution
 
 Adapted from jagatkiran's public Qwen retrieval/reranking notebook. This work was completed in a team course-project context.
 
-The full pipeline is not presented as original work. This case study focuses on the changes made to candidate retrieval, tournament structure, prompting, and experiment configuration.
+The full pipeline was adapted rather than built from scratch. This case study focuses on the team's experiment work and my confirmed leadership, retrieval-pool, and tournament contributions.
 
 ## Contribution
 
+- Served as project leader for experiment planning and task coordination.
 - Expanded the retrieval pool from 25 to 41 candidates.
 - Redesigned the reranking tournament from 3 rounds × 8 candidates to 13 rounds × 3 candidates.
-- Refined the prompt used to identify the misconception behind an incorrect answer.
-- Compared prompt and reranking configurations in the team report.
-- Completed successful end-to-end retrieval, reranking, and submission generation.
+- Prompt and configuration work remained team-level.
 
 ## Result
 
-The adapted pipeline received a Kaggle private score of **0.45365**. The referenced public notebook score observed on Kaggle was **0.43370**.
+Platform-observed Kaggle private score: **0.45365**. Referenced public notebook score observed on Kaggle: **0.43370**.
 
-These are platform-observed scores, not a locally reproduced benchmark. Public verification links and screenshots remain pending.
+These are platform-observed scores, not a locally reproduced benchmark. Public verification links and screenshots are not included in the portfolio.
 
 The score difference is not presented as proof that any single modification caused the result.
 
 ## Limitations
 
-- Public verification links are pending.
 - This was a team course project adapted from an existing public pipeline, not a fully original pipeline.
-- An individual contribution statement is pending.
-- A controlled ablation chain is pending.
+- Prompt and configuration work remains attributed at team level.
 - The score difference should not be attributed solely to one modification.
 - The comparison does not support a state-of-the-art claim.
-- The raw team PDF should not be linked publicly until personal information is removed.
-- The raw notebook remains unlinked while attribution and output cleanup are incomplete in a public-safe copy.
+- No local reproduction or ablation-proven improvement is claimed.
+- No raw notebook, team report, or notebook version label is linked.
 
 ## Portfolio status
 
 **Featured · Platform-observed score evidence**
 
-The project is featured for its retrieval and reranking implementation work; public score verification and an individual contribution statement remain pending.
+The project is featured for experiment leadership, retrieval-pool expansion, and tournament redesign within the adapted team pipeline.

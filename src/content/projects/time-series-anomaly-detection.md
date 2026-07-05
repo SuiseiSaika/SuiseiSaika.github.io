@@ -2,8 +2,8 @@
 title: "Time-series Anomaly Detection"
 summary: "Implemented and compared KNN, PCA, DFT, and Haar DWT anomaly scoring, with cleaned standard-library mechanics demonstrated on synthetic sequences."
 order: 5.5
-year: "TODO"
-status: "Strong secondary · Synthetic showcase"
+year: "2024"
+status: "Individual course assignment · Secondary"
 featured: false
 image: "/images/projects/anomaly/cover.svg"
 imageAlt: "Abstract time-series signals with highlighted anomaly spikes"
@@ -27,7 +27,7 @@ links:
 
 ## Overview
 
-Implemented and evaluated KNN distance scoring, PCA reconstruction error, DFT features, and Haar DWT features for a course assignment using the Wafer and ECG200 time-series datasets.
+In this 2024 individual anomaly-detection course assignment, I implemented and evaluated KNN distance scoring, PCA reconstruction error, DFT features, and Haar DWT features using the Wafer and ECG200 time-series datasets.
 
 ## Results
 

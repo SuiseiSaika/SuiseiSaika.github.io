@@ -47,6 +47,14 @@ const certifications = [
       <div class="project-grid">
         {secondaryProjects.map((project) => <ProjectCard project={project} />)}
       </div>
+      <article class="coursework-note reveal" aria-labelledby="additional-nlp-title">
+        <h3 id="additional-nlp-title">Additional NLP coursework</h3>
+        <p>
+          Additional coursework covered generated arithmetic-expression modeling with RNN, GRU, and LSTM variants,
+          including out-of-distribution generalization and generated-data pipeline experiments. Metrics require separate
+          public-safe extraction before publication.
+        </p>
+      </article>
     </div>
   </section>
 
@@ -55,7 +63,7 @@ const certifications = [
       <SectionTitle
         eyebrow="Experience timeline"
         title="Technical focus over time"
-        description="The component supports dated milestones; years remain TODO until verified."
+        description="Selected milestones using confirmed public-safe project periods."
       />
       <Timeline items={timeline} />
     </div>

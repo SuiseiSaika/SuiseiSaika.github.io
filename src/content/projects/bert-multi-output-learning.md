@@ -2,8 +2,8 @@
 title: "BERT Multi-output Learning"
 summary: "A BERT architecture trained to predict regression and classification targets together with task-specific preprocessing and loss balancing experiments."
 order: 4
-year: "TODO"
-status: "Implemented"
+year: "2024"
+status: "Individual course assignment"
 featured: true
 image: "/images/projects/bert/cover.svg"
 imageAlt: "Abstract shared BERT encoder branching into regression and classification outputs"
@@ -26,7 +26,7 @@ links:
 
 ## Overview
 
-Constructed a shared-encoder BERT architecture to predict relatedness regression and entailment classification targets for a course assignment.
+In this 2024 individual NLP course assignment, I constructed a shared-encoder BERT architecture to predict relatedness regression and entailment classification targets.
 
 Designed task-specific preprocessing workflows, compared cased and uncased checkpoints, compared joint and separately trained task models, and analyzed classification errors with confusion matrices.
 

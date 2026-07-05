@@ -2,8 +2,8 @@
 title: "RAG Question Answering"
 summary: "Implemented and evaluated a retrieval-augmented QA pipeline across embedding models, open-source LLMs, and prompt variants."
 order: 5
-year: "TODO"
-status: "Secondary · Course evaluation prototype"
+year: "2024"
+status: "Individual course assignment · Secondary"
 featured: false
 image: "/images/projects/rag/cover.svg"
 imageAlt: "Abstract retrieval and language model pipeline"
@@ -28,7 +28,7 @@ links:
 
 ## Overview
 
-Built a retrieval-augmented QA pipeline combining embedding models, ChromaDB retrieval, MMR selection, and multiple open-source LLMs for a course assignment.
+In this 2024 individual NLP course assignment, I built a retrieval-augmented QA pipeline combining embedding models, ChromaDB retrieval, MMR selection, and multiple open-source LLMs.
 
 Experimented with Llama, Gemma, and Phi models using unified prompt templates for consistent evaluation.
 

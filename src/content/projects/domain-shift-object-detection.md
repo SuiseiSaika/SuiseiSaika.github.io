@@ -2,8 +2,8 @@
 title: "Domain Shift Object Detection"
 summary: "Evaluated data-selection and semi-supervised strategies for YOLOv7 under cross-camera domain shift, using mAP-based comparisons across CityCam subsets."
 order: 3
-year: "TODO"
-status: "Implemented · Sanitized case study"
+year: "2023"
+status: "Individual course assignment · Sanitized case study"
 featured: true
 image: "/images/projects/domain-shift/cover.svg"
 imageAlt: "Abstract camera domains feeding a shared object detector and evaluation chart"
@@ -27,7 +27,7 @@ links:
 
 ## Overview
 
-Investigated how camera-specific visual distributions affect object detection and compared data-selection, balanced sampling, and semi-supervised strategies under domain shift.
+In this 2023 individual computer-vision course assignment, I investigated how camera-specific visual distributions affect object detection and compared data-selection, balanced sampling, and semi-supervised strategies under domain shift.
 
 The course project used the third-party YOLOv7 implementation and CityCam data provided for the assignment. My work focused on data composition, training configuration, adaptation strategies, mAP evaluation, and analysis around that established detector.
 
