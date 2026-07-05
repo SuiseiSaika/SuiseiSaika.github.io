@@ -1,9 +1,9 @@
 ---
 title: "Qwen Reranking Experiment Design"
-summary: "Designed and coordinated reranking experiments for a team course project, expanding candidate coverage from 25 to 41 and redesigning the tournament from 3 rounds × 8 candidates to 13 rounds × 3 candidates."
+summary: "Designed the reranking experiment structure for a team Kaggle course project on mathematical misconception mining, expanding retrieval from 25 to 41 candidates and restructuring tournament-style reranking to study candidate coverage and comparison granularity."
 order: 2
 year: "2024"
-status: "Featured · Reranking experiment design · Platform-observed score evidence"
+status: "Featured · Reranking experiment design"
 featured: true
 image: "/images/projects/reranking/cover.svg"
 imageAlt: "Abstract retrieval pool narrowing through an iterative tournament reranker"
@@ -15,9 +15,9 @@ tags:
   - "Experiment design"
   - "Kaggle"
 metrics:
-  - label: "Kaggle private score"
+  - label: "Kaggle private MAP@25"
     value: "0.45365"
-  - label: "Reference score"
+  - label: "Referenced baseline MAP@25"
     value: "0.43370"
 links:
   - label: "Showcase Case Study"
@@ -28,46 +28,27 @@ links:
 
 ## Overview
 
-This 2024 team course project adapted a public Qwen retrieval/reranking pipeline for Eedi misconception mining. My confirmed contribution focused on designing and coordinating the reranking experiment structure.
+In this 2024 team course project, we adapted a public Qwen-based retrieval and reranking pipeline for the Eedi misconception-mining task. The goal was to identify the misconception behind a student's incorrect mathematics answer by retrieving candidate misconception IDs and reranking them into a final prediction list.
 
-## Reranking experiment design
+## My contribution
 
-- Expanded the retrieval pool from 25 to 41 candidates to study candidate coverage.
-- Redesigned the tournament from 3 rounds × 8 candidates to 13 rounds × 3 candidates.
-- Studied how candidate coverage and choice-set size affected the reranking process.
-- Coordinated the experiment structure used to compare reranking conditions.
+My contribution focused on reranking experiment design. I expanded the retrieval pool from 25 to 41 candidates and redesigned the tournament from 3 broad rounds of 8 candidates into 13 narrower rounds of 3 candidates. This made it possible to study the trade-off between candidate coverage and reranker comparison difficulty.
 
-The team report additionally compares candidate counts, choice-set sizes, and temperatures across reranking rounds. Prompt and configuration work remains attributed at team level.
+## Experiment design
 
-## Report-backed reranking comparison
+- **Candidate coverage:** increased the retrieved candidate pool before reranking.
+- **Choice-set granularity:** compared broader and narrower candidate groups during tournament rounds.
+- **Tournament structure:** reorganized reranking from 3 × 8 to 13 × 3 while carrying candidates through repeated comparisons.
+- **Top-25 context:** evaluated how pool size and comparison granularity shaped the final prediction list used for MAP@25.
 
-| Report condition | Average score |
-| --- | ---: |
-| Without reranking | 0.42076 |
-| One-phase Qwen 32B reranking | **0.45262** |
+The team report also compared candidate counts, choice-set sizes, and temperatures during reranking rounds. Prompt and configuration experiments remain team-level.
 
-The report shows a higher average score for the one-phase reranking condition than for the condition without reranking. This comparison supports the value of evaluating reranking, but it is not causal proof for any single candidate count, choice-set size, temperature, or topology change.
+## Outcome
 
-## Platform-observed result
+The adapted reranking experiment reached a Kaggle private MAP@25 score of **0.45365**. Compared with the referenced public baseline MAP@25 of **0.43370**, this corresponds to an absolute gain of **+0.01995 MAP@25**, or approximately **+4.6% relative improvement**.
 
-Platform-observed Kaggle private score: **0.45365**. Referenced public notebook score observed on Kaggle: **0.43370**.
+The result is used here as supporting evidence for the reranking experiment design, while the case study focuses on candidate-pool expansion, tournament restructuring, and experiment interpretation. Because several reranking variables were compared, the outcome is not attributed to one isolated modification.
 
-These are platform-observed scores, not a locally reproduced benchmark. Public verification links and screenshots are not included in the portfolio.
+## Attribution / scope
 
-## Attribution and scope
-
-Adapted from jagatkiran's public Qwen retrieval/reranking notebook. The baseline pipeline and model components remain the work of their respective authors; my contribution centered on reranking experiment design, candidate coverage, and tournament topology within the team project.
-
-## Limitations
-
-- This was a team course project adapting an existing public pipeline.
-- Prompt and configuration work remains attributed at team level.
-- The reported differences should not be attributed solely to one modification.
-- The evidence does not establish state-of-the-art performance, local reproduction, or an ablation-proven causal improvement.
-- No raw notebook, team report, or notebook version label is linked.
-
-## Portfolio status
-
-**Featured · Reranking experiment design · Platform-observed score evidence**
-
-The project is featured for evidence-backed reranking experiment design, candidate-coverage analysis, and tournament-topology redesign within an adapted team pipeline.
+This work was completed as a team course project and adapted from jagatkiran's public Qwen retrieval/reranking notebook. The public write-up focuses on my confirmed reranking-related contributions; prompt and configuration experiments remain team-level unless separately noted.
