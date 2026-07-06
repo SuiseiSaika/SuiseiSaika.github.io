@@ -1,6 +1,7 @@
 ---
 import { getCollection, render, type CollectionEntry } from 'astro:content';
 import ProjectLayout from '../../layouts/ProjectLayout.astro';
+import ProductGradingTabs from '../../components/ProductGradingTabs.astro';
 
 export async function getStaticPaths() {
   const projects = await getCollection('projects');
@@ -20,5 +21,6 @@ const { Content } = await render(project);
 ---
 
 <ProjectLayout project={project}>
+  {project.id === 'multi-camera-product-grading' && <ProductGradingTabs />}
   <Content />
 </ProjectLayout>

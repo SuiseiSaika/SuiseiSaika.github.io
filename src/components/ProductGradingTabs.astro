@@ -1,0 +1,135 @@
+<section class="product-tabs" aria-labelledby="product-tabs-title" data-product-tabs>
+  <header class="product-tabs-header">
+    <p class="eyebrow">System paths</p>
+    <h2 id="product-tabs-title">Deployment and prototype context</h2>
+    <p>The private application system and the graduate research prototype are related, but their scope and evidence remain distinct.</p>
+  </header>
+
+  <div class="product-tab-list" role="tablist" aria-label="Product Grading system context">
+    <button
+      id="deployment-system-tab"
+      type="button"
+      role="tab"
+      aria-selected="true"
+      aria-controls="deployment-system-panel"
+      tabindex="0"
+    >
+      Deployment System &amp; GUI
+    </button>
+    <button
+      id="masters-prototype-tab"
+      type="button"
+      role="tab"
+      aria-selected="false"
+      aria-controls="masters-prototype-panel"
+      tabindex="-1"
+    >
+      Master’s Prototype
+    </button>
+  </div>
+
+  <section
+    id="deployment-system-panel"
+    class="product-tab-panel"
+    role="tabpanel"
+    aria-labelledby="deployment-system-tab"
+    tabindex="0"
+  >
+    <h3>Overview</h3>
+    <p>A private-source AI application system for product grading workflows, combining inference runtime design, source handling, tracking, rule-based grading, RS232 software-side output, configuration-driven execution, and a PyQt6 control plane for operating the workflow.</p>
+
+    <h3>Detailed Scope</h3>
+    <ul>
+      <li>Private-source runtime with camera and Intel RealSense D435-oriented source handling.</li>
+      <li>Detection, segmentation, and tracking integration with lane-aware grading logic.</li>
+      <li>Structured result outputs and RS232 software-side output integration.</li>
+      <li>Configuration-driven execution, system testing, and demo preparation.</li>
+      <li>PyQt6 control plane for configuration editing and source selection.</li>
+      <li>Inference launch and stop workflows, external-process control, runtime logs, and result navigation.</li>
+      <li>Jetson Orin Nano 8G and Intel RealSense D435 are documented only as demo-environment context.</li>
+    </ul>
+
+    <h3>Boundaries / Pending Evidence</h3>
+    <ul>
+      <li>The runtime and GUI source remain private; neither raw repository is linked publicly.</li>
+      <li>Public screenshots and detailed operator-workflow evidence remain pending review.</li>
+      <li>Latency, FPS, accuracy, and hardware performance measurements remain pending public verification.</li>
+      <li>Operator usability has not received formal public validation.</li>
+      <li>The case study does not assert completed industrial deployment or an approved acceleration result.</li>
+    </ul>
+  </section>
+
+  <section
+    id="masters-prototype-panel"
+    class="product-tab-panel"
+    role="tabpanel"
+    aria-labelledby="masters-prototype-tab"
+    tabindex="0"
+    hidden
+  >
+    <h3>Overview</h3>
+    <p>A research and thesis-oriented prototype that explored product grading with computer vision methods and helped shape the later deployment-oriented system direction.</p>
+
+    <h3>Detailed Scope</h3>
+    <ul>
+      <li>Conveyor-vision and product-grading experiments in a graduate research context.</li>
+      <li>YOLO-based detection and segmentation explored as part of the prototype workflow.</li>
+      <li>Dataset preparation and annotation considered at a high level without exposing private assets.</li>
+      <li>Experiment-oriented development used to inform the direction of the later runtime and GUI.</li>
+    </ul>
+
+    <h3>Boundaries / Pending Evidence</h3>
+    <ul>
+      <li>Prototype results are kept separate from deployment-oriented runtime claims.</li>
+      <li>No unverified thesis metrics, raw datasets, model weights, or private images are published here.</li>
+      <li>Private product and vendor details remain excluded.</li>
+      <li>The research prototype is not presented as evidence of industrial deployment.</li>
+    </ul>
+  </section>
+
+  <noscript>
+    <style>.product-tab-panel[hidden] { display: block; }</style>
+    <p class="product-tabs-noscript">JavaScript is unavailable, so both sections are shown in document order.</p>
+  </noscript>
+</section>
+
+<script>
+  document.querySelectorAll<HTMLElement>('[data-product-tabs]').forEach((container) => {
+    const tabs = Array.from(container.querySelectorAll<HTMLButtonElement>('[role="tab"]'));
+    const panels = Array.from(container.querySelectorAll<HTMLElement>('[role="tabpanel"]'));
+
+    const activateTab = (activeTab: HTMLButtonElement, moveFocus = true) => {
+      tabs.forEach((tab) => {
+        const isActive = tab === activeTab;
+        tab.setAttribute('aria-selected', String(isActive));
+        tab.tabIndex = isActive ? 0 : -1;
+      });
+
+      panels.forEach((panel) => {
+        panel.hidden = panel.id !== activeTab.getAttribute('aria-controls');
+      });
+
+      if (moveFocus) activeTab.focus();
+    };
+
+    tabs.forEach((tab, index) => {
+      tab.addEventListener('click', () => activateTab(tab));
+      tab.addEventListener('keydown', (event) => {
+        let nextIndex = index;
+
+        if (event.key === 'ArrowRight' || event.key === 'ArrowDown') nextIndex = (index + 1) % tabs.length;
+        if (event.key === 'ArrowLeft' || event.key === 'ArrowUp') nextIndex = (index - 1 + tabs.length) % tabs.length;
+        if (event.key === 'Home') nextIndex = 0;
+        if (event.key === 'End') nextIndex = tabs.length - 1;
+
+        if (nextIndex !== index) {
+          event.preventDefault();
+          activateTab(tabs[nextIndex]);
+        }
+      });
+    });
+
+    const selectedTab = tabs.find((tab) => tab.getAttribute('aria-selected') === 'true');
+    if (selectedTab) activateTab(selectedTab, false);
+  });
+</script>
