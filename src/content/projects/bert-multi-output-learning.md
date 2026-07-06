@@ -28,16 +28,14 @@ links:
 
 In this 2024 individual NLP course assignment, I constructed a shared-encoder BERT architecture to predict relatedness regression and entailment classification targets.
 
-Designed task-specific preprocessing workflows, compared cased and uncased checkpoints, compared joint and separately trained task models, and analyzed classification errors with confusion matrices.
+I designed task-specific preprocessing workflows, compared cased and uncased checkpoints, compared joint and separately trained task models, and analyzed classification errors with confusion matrices.
 
-## Results
+## Implementation and evaluation
 
 The reported test results were **0.8395 Spearman correlation** for relatedness and **0.8815 accuracy** for entailment classification.
 
-For the public showcase, the evaluation mechanics were refactored into dependency-free Spearman, accuracy, error, and confusion-matrix helpers with synthetic inputs.
+The evaluation also included checkpoint and training-setup comparisons plus confusion-matrix analysis for classification errors. For the public showcase, the evaluation mechanics were refactored into dependency-free Spearman, accuracy, error, and confusion-matrix helpers with synthetic inputs.
 
-## Limitations
+## Course-project context
 
-- This work was completed in a course-assignment setting.
-- Dataset split provenance, preprocessing, seeds, and repeated-run uncertainty remain incompletely documented.
-- The public module demonstrates evaluation behavior rather than a production NLP classifier or end-to-end model reproduction.
+The reported metrics are presented in the context of the course-used test split. This page emphasizes the shared-encoder design, task-specific output heads, preprocessing workflow, training variants, and evaluation process. Future materials may add a compact architecture diagram and a clearer training/evaluation configuration table.

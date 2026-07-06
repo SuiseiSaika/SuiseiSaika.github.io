@@ -43,12 +43,12 @@ My contribution focused on reranking experiment design. I expanded the retrieval
 
 The team report also compared candidate counts, choice-set sizes, and temperatures during reranking rounds. Prompt and configuration experiments remain team-level.
 
-## Outcome
+## Evaluation summary
 
 The adapted reranking experiment reached a Kaggle private MAP@25 score of **0.45365**. Compared with the referenced public baseline MAP@25 of **0.43370**, this corresponds to an absolute gain of **+0.01995 MAP@25**, or approximately **+4.6% relative improvement**.
 
-The result is used here as supporting evidence for the reranking experiment design, while the case study focuses on candidate-pool expansion, tournament restructuring, and experiment interpretation. Because several reranking variables were compared, the outcome is not attributed to one isolated modification.
+The score comparison accompanies the reranking experiment design, while the case study focuses on candidate-pool expansion, tournament restructuring, the top-25 workflow, and experiment interpretation. Because several variables changed across the comparison, the result is interpreted at the overall experiment-design level rather than as a single-variable causal effect.
 
-## Attribution / scope
+## Project context
 
-This work was completed as a team course project and adapted from jagatkiran's public Qwen retrieval/reranking notebook. The public write-up focuses on my confirmed reranking-related contributions; prompt and configuration experiments remain team-level unless separately noted.
+This work was completed as a team course project and adapted from jagatkiran's public Qwen retrieval/reranking notebook. My confirmed contribution covered retrieval-pool expansion and tournament redesign. Prompt and configuration comparisons are summarized as team-project work.

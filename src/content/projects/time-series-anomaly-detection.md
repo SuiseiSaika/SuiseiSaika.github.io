@@ -29,15 +29,12 @@ links:
 
 In this 2024 individual anomaly-detection course assignment, I implemented and evaluated KNN distance scoring, PCA reconstruction error, DFT features, and Haar DWT features using the Wafer and ECG200 time-series datasets.
 
-## Results
+## Evaluation summary
 
 In the original fixed-`k=5` course comparison, Haar DWT produced the highest documented AUC on both datasets: **0.998590** on Wafer and **0.947917** on ECG200.
 
 For the public showcase, I reconstructed KNN scoring, PCA reconstruction error, DFT and Haar DWT transforms, score ranking, thresholding, and tie-aware ROC AUC with the Python standard library. The runnable example uses only synthetic sinusoid and spike sequences.
 
-## Limitations
+## Course and showcase scope
 
-- The reported Wafer and ECG200 values come from the original course experiment, separately from the synthetic showcase implementation.
-- Dataset provenance, split construction, and end-to-end reproduction details remain incomplete in the public materials.
-- The work is not a production anomaly-detection system.
-- No external deployment validation or large-scale benchmark has been completed.
+The reported Wafer and ECG200 values come from the original course experiment, while the public implementation demonstrates the scoring and evaluation mechanics with synthetic sequences. This separation keeps the result context clear while making the KNN, PCA, DFT, Haar DWT, thresholding, and tie-aware ROC-AUC workflow directly inspectable. Future materials may add a compact pipeline diagram and a course-result table with dataset and parameter context.
