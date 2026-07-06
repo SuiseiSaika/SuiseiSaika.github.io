@@ -2,7 +2,7 @@
   <header class="product-tabs-header">
     <p class="eyebrow">System paths</p>
     <h2 id="product-tabs-title">Deployment and prototype context</h2>
-    <p>The private application system and the graduate research prototype are related, but their scope and evidence remain distinct.</p>
+    <p>This project evolved from a thesis prototype that validated a selected product-grading concept into a private-source deployment-oriented system designed for configurable conveyor grading workflows. The later system emphasizes GUI- and configuration-driven operation, replaceable trained YOLO weights, adjustable class and mask settings, and a top-view hardware direction designed for higher object throughput.</p>
   </header>
 
   <div class="product-tab-list" role="tablist" aria-label="Product Grading system context">
@@ -36,26 +36,27 @@
     tabindex="0"
   >
     <h3>Overview</h3>
-    <p>A private-source AI application system for product grading workflows, combining inference runtime design, source handling, tracking, rule-based grading, RS232 software-side output, configuration-driven execution, and a PyQt6 control plane for operating the workflow.</p>
+    <p>A private-source AI application system for conveyor product grading workflows. The deployment-oriented version focuses on practical operation, configurable grading logic, model-swapping flexibility, multi-source input handling, and a GUI-driven workflow for preparing, launching, monitoring, and reviewing inference runs.</p>
 
     <h3>Detailed Scope</h3>
     <ul>
-      <li>Private-source runtime with camera and Intel RealSense D435-oriented source handling.</li>
-      <li>Detection, segmentation, and tracking integration with lane-aware grading logic.</li>
-      <li>Structured result outputs and RS232 software-side output integration.</li>
-      <li>Configuration-driven execution, system testing, and demo preparation.</li>
-      <li>PyQt6 control plane for configuration editing and source selection.</li>
-      <li>Inference launch and stop workflows, external-process control, runtime logs, and result navigation.</li>
-      <li>Jetson Orin Nano 8G and Intel RealSense D435 are documented only as demo-environment context.</li>
+      <li>Supports video, camera, and RealSense-oriented input workflows.</li>
+      <li>Tested with Jetson Orin Nano + Intel RealSense D435 as the documented hardware context.</li>
+      <li>Uses YOLO-based visual inference at a high level without exposing private model internals.</li>
+      <li>Designed to support different conveyor-object grading tasks by swapping trained YOLO weights and adjusting GUI- and configuration-driven settings.</li>
+      <li>Configuration covers class definitions, mask-related settings, grading logic, input-source selection, and runtime execution parameters.</li>
+      <li>GUI pages and controls cover runtime setup, source selection, model and inference configuration, class and mask customization, grading setup, launch and stop control, runtime logs, and result navigation.</li>
+      <li>The current direction shifts toward a top-view workflow and revised hardware setup designed for higher object throughput than the earlier multi-view prototype; this is a design direction rather than a verified performance result.</li>
     </ul>
 
     <h3>Boundaries / Pending Evidence</h3>
     <ul>
-      <li>The runtime and GUI source remain private; neither raw repository is linked publicly.</li>
-      <li>Public screenshots and detailed operator-workflow evidence remain pending review.</li>
-      <li>Latency, FPS, accuracy, and hardware performance measurements remain pending public verification.</li>
-      <li>Operator usability has not received formal public validation.</li>
-      <li>The case study does not assert completed industrial deployment or an approved acceleration result.</li>
+      <li>Source code remains private, and no private runtime repository is linked.</li>
+      <li>Public screenshots and operator-workflow evidence remain pending review.</li>
+      <li>Verified performance measurements remain pending public review.</li>
+      <li>Internal model details, raw product images, model weights, and private runtime configuration are not exposed.</li>
+      <li>Vendor-specific details and command or protocol details remain excluded.</li>
+      <li>The page does not characterize the system as deployment-complete or certified for production use.</li>
     </ul>
   </section>
 
@@ -68,22 +69,26 @@
     hidden
   >
     <h3>Overview</h3>
-    <p>A research and thesis-oriented prototype that explored product grading with computer vision methods and helped shape the later deployment-oriented system direction.</p>
+    <p>A thesis-oriented product grading prototype focused on validating the computer-vision concept and building the model-training workflow behind the system. The prototype emphasized how the model and dataset were constructed, rather than how the final workflow would be operated by users.</p>
 
     <h3>Detailed Scope</h3>
     <ul>
-      <li>Conveyor-vision and product-grading experiments in a graduate research context.</li>
-      <li>YOLO-based detection and segmentation explored as part of the prototype workflow.</li>
-      <li>Dataset preparation and annotation considered at a high level without exposing private assets.</li>
-      <li>Experiment-oriented development used to inform the direction of the later runtime and GUI.</li>
+      <li>A graduate research prototype focused on one selected product-grading scenario rather than a configurable multi-object deployment workflow.</li>
+      <li>Used top, front, and back views to capture more complete object characteristics.</li>
+      <li>Used YOLO-based detection and segmentation while emphasizing dataset construction, annotation, preprocessing, and model training.</li>
+      <li>Combined synthetic data with model-assisted annotation methods, including SAM-assisted labeling and pseudo-labeling at a high level, alongside preprocessing and augmentation.</li>
+      <li>Tested with Jetson Orin Nano + Intel RealSense D435 as the documented hardware context.</li>
+      <li>Established a model-development and product-grading foundation that informed the later runtime and GUI direction.</li>
+      <li>Compared with the prototype, the later system shifts from a fixed research scenario toward a configurable top-view workflow, GUI-driven operation, and replaceable trained-model and configuration support.</li>
     </ul>
 
     <h3>Boundaries / Pending Evidence</h3>
     <ul>
-      <li>Prototype results are kept separate from deployment-oriented runtime claims.</li>
-      <li>No unverified thesis metrics, raw datasets, model weights, or private images are published here.</li>
-      <li>Private product and vendor details remain excluded.</li>
-      <li>The research prototype is not presented as evidence of industrial deployment.</li>
+      <li>The prototype is distinct from the deployment-oriented runtime, and its results are not used as deployment-system benchmarks.</li>
+      <li>Raw datasets, private images, annotation files, and model weights remain excluded.</li>
+      <li>Vendor-sensitive details remain excluded.</li>
+      <li>Any future thesis metrics would require clear experiment-context wording and remain separate from later-system evidence.</li>
+      <li>The prototype is presented as graduate research, not as evidence of production deployment.</li>
     </ul>
   </section>
 
