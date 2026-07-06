@@ -1,6 +1,6 @@
 ---
-title: "RAG Question Answering"
-summary: "Implemented and evaluated a retrieval-augmented QA pipeline across embedding models, open-source LLMs, and prompt variants."
+title: "RAG Evaluation Prototype"
+summary: "Configured a retrieval-augmented QA pipeline to compare embedding and language models, retrieval settings, prompt variants, and a no-RAG baseline."
 order: 5
 year: "2024"
 status: "Individual course assignment · Secondary"
@@ -20,9 +20,9 @@ metrics:
   - label: "No-RAG baseline"
     value: "4/10"
 links:
-  - label: "Showcase Case Study"
+  - label: "Showcase"
     url: "https://github.com/SuiseiSaika/ai-portfolio-case-studies/tree/main/case-studies/nlp/rag-question-answering.md"
-  - label: "Cleaned Code"
+  - label: "Code"
     url: "https://github.com/SuiseiSaika/ai-portfolio-case-studies/tree/main/src/nlp_showcase/rag"
 ---
 

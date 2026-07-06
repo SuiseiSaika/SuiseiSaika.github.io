@@ -1,6 +1,6 @@
 ---
 title: "Qwen Reranking Experiment Design"
-summary: "Designed the reranking experiment structure for a team Kaggle course project on mathematical misconception mining, expanding retrieval from 25 to 41 candidates and restructuring tournament-style reranking to study candidate coverage and comparison granularity."
+summary: "Designed candidate-coverage and tournament-reranking experiments for a team course project, restructuring how retrieved candidates move through comparison rounds into a final top-25 prediction workflow."
 order: 2
 year: "2024"
 status: "Featured · Reranking experiment design"
@@ -20,9 +20,9 @@ metrics:
   - label: "Referenced baseline MAP@25"
     value: "0.43370"
 links:
-  - label: "Showcase Case Study"
+  - label: "Showcase"
     url: "https://github.com/SuiseiSaika/ai-portfolio-case-studies/tree/main/case-studies/nlp/qwen-tournament-reranking.md"
-  - label: "Cleaned Code"
+  - label: "Code"
     url: "https://github.com/SuiseiSaika/ai-portfolio-case-studies/tree/main/src/nlp_showcase/qwen_reranking"
 ---
 

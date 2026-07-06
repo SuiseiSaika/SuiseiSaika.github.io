@@ -1,6 +1,6 @@
 ---
 title: "Time-series Anomaly Detection"
-summary: "Implemented and compared KNN, PCA, DFT, and Haar DWT anomaly scoring, with cleaned standard-library mechanics demonstrated on synthetic sequences."
+summary: "Implemented KNN, PCA, DFT, and Haar DWT anomaly-scoring pipelines and compared their behavior through a structured ROC-AUC evaluation process."
 order: 5.5
 year: "2024"
 status: "Individual course assignment · Secondary"
@@ -19,9 +19,9 @@ metrics:
   - label: "ECG200 ROC AUC"
     value: "0.947917"
 links:
-  - label: "Showcase Case Study"
+  - label: "Showcase"
     url: "https://github.com/SuiseiSaika/ai-portfolio-case-studies/tree/main/case-studies/anomaly-detection/time-series-anomaly-detection.md"
-  - label: "Cleaned Code"
+  - label: "Code"
     url: "https://github.com/SuiseiSaika/ai-portfolio-case-studies/tree/main/src/anomaly_showcase/timeseries"
 ---
 

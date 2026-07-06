@@ -1,6 +1,6 @@
 ---
 title: "Domain Shift Object Detection"
-summary: "Evaluated data-selection and semi-supervised strategies for YOLOv7 under cross-camera domain shift, using mAP-based comparisons across CityCam subsets."
+summary: "Configured YOLOv7-based domain-adaptation experiments, comparing data-selection and semi-supervised strategies through a structured mAP evaluation workflow."
 order: 3
 year: "2023"
 status: "Individual course assignment · Sanitized case study"
@@ -19,9 +19,9 @@ metrics:
   - label: "Best mAP@0.5:0.95"
     value: "0.521"
 links:
-  - label: "Showcase Case Study"
+  - label: "Showcase"
     url: "https://github.com/SuiseiSaika/ai-portfolio-case-studies/tree/main/case-studies/computer-vision/domain-shift-object-detection.md"
-  - label: "Cleaned Code"
+  - label: "Code"
     url: "https://github.com/SuiseiSaika/ai-portfolio-case-studies/tree/main/src/cv_showcase/domain_shift"
 ---
 

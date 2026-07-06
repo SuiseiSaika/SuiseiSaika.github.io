@@ -1,6 +1,6 @@
 ---
 title: "BERT Multi-output Learning"
-summary: "A BERT architecture trained to predict regression and classification targets together with task-specific preprocessing and loss balancing experiments."
+summary: "Implemented a shared BERT encoder with regression and classification heads, then compared preprocessing, checkpoint, training, and evaluation variants."
 order: 4
 year: "2024"
 status: "Individual course assignment"
@@ -18,9 +18,9 @@ metrics:
   - label: "Test accuracy"
     value: "0.8815"
 links:
-  - label: "Showcase Case Study"
+  - label: "Showcase"
     url: "https://github.com/SuiseiSaika/ai-portfolio-case-studies/tree/main/case-studies/nlp/bert-multi-output-learning.md"
-  - label: "Cleaned Code"
+  - label: "Code"
     url: "https://github.com/SuiseiSaika/ai-portfolio-case-studies/tree/main/src/nlp_showcase/bert_multi_output"
 ---
 
