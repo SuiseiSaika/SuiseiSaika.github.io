@@ -1,84 +1,84 @@
 <section class="product-tabs" aria-labelledby="product-tabs-title" data-product-tabs>
   <header class="product-tabs-header">
-    <p class="eyebrow">System paths</p>
-    <h2 id="product-tabs-title">Deployment and prototype context</h2>
-    <p>This project evolved from a thesis prototype that validated a selected product-grading concept into a private-source deployment-oriented system designed for configurable conveyor grading workflows. The later system emphasizes GUI- and configuration-driven operation, replaceable trained YOLO weights, adjustable class and mask settings, and a top-view hardware direction designed for higher object throughput.</p>
+    <p class="eyebrow">System evolution</p>
+    <h2 id="product-tabs-title">Product Version and thesis prototype</h2>
+    <p>This project evolved from a graduate research prototype into a private-source product-oriented system for configurable conveyor grading workflows. The Product Version focuses on GUI- and configuration-driven operation, replaceable trained YOLO weights, adjustable class and mask settings, multi-source input handling, and a top-view hardware direction for higher object throughput. The thesis prototype focused on multi-view visual feature extraction, dataset construction, model-assisted annotation, and YOLO-based model development.</p>
   </header>
 
-  <div class="product-tab-list" role="tablist" aria-label="Product Grading system context">
+  <div class="product-tab-list" role="tablist" aria-label="Product Grading versions">
     <button
-      id="deployment-system-tab"
+      id="product-version-tab"
       type="button"
       role="tab"
       aria-selected="true"
-      aria-controls="deployment-system-panel"
+      aria-controls="product-version-panel"
       tabindex="0"
     >
-      Deployment System &amp; GUI
+      Product Version
     </button>
     <button
-      id="masters-prototype-tab"
+      id="thesis-prototype-tab"
       type="button"
       role="tab"
       aria-selected="false"
-      aria-controls="masters-prototype-panel"
+      aria-controls="thesis-prototype-panel"
       tabindex="-1"
     >
-      Master’s Prototype
+      Prototype (Master’s Thesis)
     </button>
   </div>
 
   <section
-    id="deployment-system-panel"
+    id="product-version-panel"
     class="product-tab-panel"
     role="tabpanel"
-    aria-labelledby="deployment-system-tab"
+    aria-labelledby="product-version-tab"
     tabindex="0"
   >
     <h3>Overview</h3>
-    <p>A private-source AI application system for conveyor product grading workflows. The deployment-oriented version focuses on practical operation, configurable grading logic, model-swapping flexibility, multi-source input handling, and a GUI-driven workflow for preparing, launching, monitoring, and reviewing inference runs.</p>
+    <p>A private-source product-oriented AI application for configurable conveyor product grading. The system combines multi-source input handling, YOLO-based visual inference, replaceable trained weights, configurable class and mask settings, grading logic, GUI-driven operation, and structured result workflows.</p>
 
-    <h3>Detailed Scope</h3>
+    <h3>Implementation Focus</h3>
     <ul>
       <li>Supports video, camera, and RealSense-oriented input workflows.</li>
-      <li>Tested with Jetson Orin Nano + Intel RealSense D435 as the documented hardware context.</li>
-      <li>Uses YOLO-based visual inference at a high level without exposing private model internals.</li>
-      <li>Designed to support different conveyor-object grading tasks by swapping trained YOLO weights and adjusting GUI- and configuration-driven settings.</li>
-      <li>Configuration covers class definitions, mask-related settings, grading logic, input-source selection, and runtime execution parameters.</li>
-      <li>GUI pages and controls cover runtime setup, source selection, model and inference configuration, class and mask customization, grading setup, launch and stop control, runtime logs, and result navigation.</li>
-      <li>The current direction shifts toward a top-view workflow and revised hardware setup designed for higher object throughput than the earlier multi-view prototype; this is a design direction rather than a verified performance result.</li>
+      <li>Uses Jetson Orin Nano + Intel RealSense D435 as the test environment.</li>
+      <li>Applies YOLO-based visual inference within the grading workflow.</li>
+      <li>Is designed to support different conveyor-object grading tasks by swapping trained YOLO weights and adjusting GUI and configuration settings.</li>
+      <li>Provides class definitions, mask-related configuration, grading logic, input-source selection, and runtime execution parameters.</li>
+      <li>Uses a top-view hardware direction designed for higher object throughput.</li>
     </ul>
 
-    <h3>Current Public Scope</h3>
-    <p>The public portfolio describes the configurable grading workflow, source handling, model and class settings, GUI operation, and test environment at the system level. Source code remains private, and the summary focuses on engineering decisions rather than private runtime configuration, model weights, product imagery, vendor details, or protocol commands.</p>
-    <p>Future materials may include selected GUI screenshots, an operator-workflow sequence, and performance summaries prepared in a portfolio-safe format.</p>
+    <h3>Workflow</h3>
+    <ul>
+      <li>GUI-driven runtime setup and input-source selection.</li>
+      <li>Model and inference configuration with class, mask, and grading customization.</li>
+      <li>Launch and stop control, runtime logs, result navigation, and structured result review.</li>
+    </ul>
   </section>
 
   <section
-    id="masters-prototype-panel"
+    id="thesis-prototype-panel"
     class="product-tab-panel"
     role="tabpanel"
-    aria-labelledby="masters-prototype-tab"
+    aria-labelledby="thesis-prototype-tab"
     tabindex="0"
     hidden
   >
     <h3>Overview</h3>
-    <p>A thesis-oriented product grading prototype focused on validating the computer-vision concept and building the model-training workflow behind the system. The prototype emphasized how the model and dataset were constructed, rather than how the final workflow would be operated by users.</p>
+    <p>A graduate research prototype focused on building and validating the computer-vision foundation for product grading. The prototype explored how multi-view visual information, dataset construction, synthetic data, model-assisted annotation, and YOLO-based model training could support the grading workflow.</p>
 
-    <h3>Detailed Scope</h3>
+    <h3>Implementation Focus</h3>
     <ul>
-      <li>A graduate research prototype focused on one selected product-grading scenario rather than a configurable multi-object deployment workflow.</li>
-      <li>Used top, front, and back views to capture more complete object characteristics.</li>
-      <li>Used YOLO-based detection and segmentation while emphasizing dataset construction, annotation, preprocessing, and model training.</li>
-      <li>Combined synthetic data with model-assisted annotation methods, including SAM-assisted labeling and pseudo-labeling at a high level, alongside preprocessing and augmentation.</li>
-      <li>Tested with Jetson Orin Nano + Intel RealSense D435 as the documented hardware context.</li>
-      <li>Established a model-development and product-grading foundation that informed the later runtime and GUI direction.</li>
-      <li>Compared with the prototype, the later system shifts from a fixed research scenario toward a configurable top-view workflow, GUI-driven operation, and replaceable trained-model and configuration support.</li>
+      <li>Used top, front, and back views for multi-view visual feature extraction.</li>
+      <li>Explored YOLO-based detection and segmentation for product grading.</li>
+      <li>Developed the dataset construction and annotation workflow with synthetic data.</li>
+      <li>Applied SAM-assisted labeling, model-assisted annotation, and pseudo-labeling at a high level.</li>
+      <li>Included preprocessing, augmentation, model training, and evaluation.</li>
+      <li>Used Jetson Orin Nano + Intel RealSense D435 as the test environment.</li>
     </ul>
 
-    <h3>Current Public Scope</h3>
-    <p>This section presents the prototype as the graduate-research foundation for the later system, with emphasis on multi-view capture, dataset construction, annotation, preprocessing, augmentation, and model training. Prototype results and deployment-system evaluation remain separate so each stage retains its own experiment context.</p>
-    <p>Future materials may include a thesis-context metric table and a portfolio-safe dataset and annotation workflow figure using non-private examples.</p>
+    <h3>Research Workflow</h3>
+    <p>The prototype connected multi-view data capture, dataset preparation, annotation support, preprocessing, augmentation, YOLO-based model training, and evaluation into a research workflow. It established the computer-vision and model-development foundation that informed the later Product Version.</p>
   </section>
 
   <noscript>

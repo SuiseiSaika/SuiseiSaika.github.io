@@ -36,7 +36,7 @@ export const timeline: TimelineItem[] = [
     event: 'Real-Time Multi-Source Product Grading System',
     organization: 'Private-source AI application project',
     description:
-      'Contributed to a private-source team AI application for product grading workflows, integrating inference runtime design, camera and source handling, tracking, rule-based grading, RS232 software-side output, PyQt6 control-plane tooling, and a master’s-prototype foundation. Screenshots and benchmarks remain pending public review.',
-    technologies: ['AI Applications', 'Computer Vision', 'Edge AI', 'PyQt6', 'RS232', 'System Integration'],
+      'Contributed to a private-source team AI application for configurable conveyor product grading, covering inference runtime design, camera and source handling, tracking, grading logic, GUI-driven operation, and prototype-to-product system evolution.',
+    technologies: ['AI Applications', 'Computer Vision', 'Edge AI', 'GUI Workflow', 'YOLO', 'System Integration'],
   },
 ];

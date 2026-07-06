@@ -9,7 +9,7 @@ export const skillGroups = [
   },
   {
     title: 'Edge AI & Systems',
-    skills: ['TensorRT', 'NVIDIA Jetson Orin', 'Multiprocessing', 'PyQt6', 'PyInstaller', 'Conda'],
+    skills: ['Edge inference workflow', 'NVIDIA Jetson Orin', 'Multiprocessing', 'Desktop GUI tooling', 'PyInstaller', 'Conda'],
   },
   {
     title: 'LLM Engineering',
