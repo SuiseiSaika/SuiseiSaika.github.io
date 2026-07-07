@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" role="img" aria-labelledby="title description">
+  <title id="title">Real-Time Multi-Source Product Grading System</title>
+  <desc id="description">A minimal conveyor lane with three objects, one camera, and a subtle control signal.</desc>
+  <rect width="1200" height="675" fill="#10283c"/>
+
+  <g transform="translate(130 294)">
+    <rect width="780" height="180" rx="28" fill="#173d50" stroke="#72d4d5" stroke-width="4"/>
+    <path d="M40 90h700" stroke="#8fb7bd" stroke-width="4" stroke-dasharray="16 18"/>
+    <g fill="#f4b860">
+      <rect x="120" y="48" width="96" height="84" rx="14"/>
+      <rect x="342" y="48" width="96" height="84" rx="14"/>
+      <rect x="564" y="48" width="96" height="84" rx="14"/>
+    </g>
+  </g>
+
+  <g transform="translate(438 92)">
+    <path d="M80 116v72" stroke="#dff3f2" stroke-width="10" stroke-linecap="round"/>
+    <rect x="14" y="18" width="132" height="98" rx="20" fill="#dff3f2"/>
+    <circle cx="80" cy="67" r="28" fill="#087f8c" stroke="#72d4d5" stroke-width="9"/>
+    <path d="M80 190 20 280M80 190l60 90" fill="none" stroke="#72d4d5" stroke-width="4" opacity=".65"/>
+  </g>
+
+  <path d="M910 384h92" fill="none" stroke="#f4b860" stroke-width="6" stroke-dasharray="12 12"/>
+  <rect x="1002" y="348" width="84" height="72" rx="16" fill="#dff3f2"/>
+  <circle cx="1044" cy="384" r="14" fill="#23a6a5"/>
+</svg>

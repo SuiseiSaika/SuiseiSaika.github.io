@@ -1,0 +1,50 @@
+---
+import type { CollectionEntry } from 'astro:content';
+import BaseLayout from './BaseLayout.astro';
+import { withBase } from '../utils/paths';
+
+interface Props {
+  project: CollectionEntry<'projects'>;
+}
+
+const { project } = Astro.props;
+---
+
+<BaseLayout title={`${project.data.title} | Chang Shuo (Johnson) Chen`} description={project.data.summary} image={project.data.image}>
+  <article class="case-study container">
+    <a class="back-link" href={withBase('/#projects')}>← Back to projects</a>
+    <header class="case-header">
+      <div>
+        <p class="eyebrow">Case study · {project.data.status}</p>
+        <h1>{project.data.title}</h1>
+        <p class="case-summary">{project.data.summary}</p>
+        <ul class="tag-list" aria-label="Technologies">
+          {project.data.tags.map((tag) => <li>{tag}</li>)}
+        </ul>
+        {project.data.links.length > 0 && (
+          <div class="case-artifacts">
+            <p>Public artifacts</p>
+            <div class="card-links case-links" aria-label="Public project links">
+              {project.data.links.map((link) => <a class="text-link" href={link.url}>{link.label}</a>)}
+            </div>
+          </div>
+        )}
+      </div>
+      <img src={withBase(project.data.image)} alt={project.data.imageAlt} width="1200" height="675" />
+    </header>
+
+    <section class="case-facts" aria-label="Project facts">
+      <div><span>Year</span><strong class:list={{ todo: project.data.year === 'TODO' }}>{project.data.year}</strong></div>
+      {project.data.metrics.map((metric) => (
+        <div>
+          <span>{metric.label}</span>
+          <strong class:list={{ todo: metric.value === 'TODO' }}>{metric.value}</strong>
+        </div>
+      ))}
+    </section>
+
+    <div class="case-body prose">
+      <slot />
+    </div>
+  </article>
+</BaseLayout>

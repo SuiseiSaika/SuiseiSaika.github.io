@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" role="img" aria-labelledby="t d">
+  <title id="t">Technical coursework across NLP, anomaly detection, and computer vision</title>
+  <desc id="d">Abstract three-cluster coursework cover with sequence tokens, anomaly signal scoring, and computer-vision geometry</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#10283c"/>
+      <stop offset="1" stop-color="#173c4b"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="675" fill="url(#bg)"/>
+  <g opacity=".14" stroke="#dff3f2" stroke-width="2">
+    <path d="M120 150h960M120 335h960M120 520h960"/>
+    <path d="M260 100v475M600 100v475M940 100v475"/>
+  </g>
+  <g transform="translate(110 150)">
+    <rect width="290" height="260" rx="34" fill="#edf5f3" opacity=".95"/>
+    <text x="145" y="54" text-anchor="middle" fill="#087f8c" font-family="Arial, sans-serif" font-size="28" font-weight="700">NLP</text>
+    <g fill="#132238" font-family="monospace" font-size="26" font-weight="700" text-anchor="middle">
+      <rect x="42" y="92" width="64" height="48" rx="14" fill="#b9d8d6"/>
+      <rect x="116" y="92" width="64" height="48" rx="14" fill="#b9d8d6"/>
+      <rect x="190" y="92" width="64" height="48" rx="14" fill="#b9d8d6"/>
+      <text x="74" y="124">tok</text>
+      <text x="148" y="124">emb</text>
+      <text x="222" y="124">seq</text>
+    </g>
+    <g stroke="#087f8c" stroke-width="7" fill="#72d4d5">
+      <line x1="82" y1="182" x2="145" y2="212"/>
+      <line x1="145" y1="212" x2="214" y2="176"/>
+      <circle cx="82" cy="182" r="13"/>
+      <circle cx="145" cy="212" r="13"/>
+      <circle cx="214" cy="176" r="13"/>
+    </g>
+  </g>
+  <g transform="translate(455 150)">
+    <rect width="290" height="260" rx="34" fill="#edf5f3" opacity=".95"/>
+    <text x="145" y="54" text-anchor="middle" fill="#087f8c" font-family="Arial, sans-serif" font-size="28" font-weight="700">Anomaly</text>
+    <path d="M38 158 C82 145 112 112 145 130 S198 210 232 152 S256 132 265 126" fill="none" stroke="#087f8c" stroke-width="10" stroke-linecap="round"/>
+    <circle cx="199" cy="208" r="22" fill="#f4b860"/>
+    <path d="M40 206h210" stroke="#b9d8d6" stroke-width="6" stroke-linecap="round"/>
+    <text x="145" y="232" text-anchor="middle" fill="#132238" font-family="Arial, sans-serif" font-size="22" font-weight="700">score</text>
+  </g>
+  <g transform="translate(800 150)">
+    <rect width="290" height="260" rx="34" fill="#edf5f3" opacity=".95"/>
+    <text x="145" y="54" text-anchor="middle" fill="#087f8c" font-family="Arial, sans-serif" font-size="28" font-weight="700">Vision</text>
+    <rect x="62" y="92" width="164" height="112" rx="18" fill="none" stroke="#087f8c" stroke-width="9"/>
+    <path d="M62 174 128 122 168 156 226 108" fill="none" stroke="#72d4d5" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="105" cy="126" r="11" fill="#f4b860"/>
+    <path d="M78 220h134M100 238h90" stroke="#b9d8d6" stroke-width="7" stroke-linecap="round"/>
+  </g>
+  <g stroke="#72d4d5" stroke-width="8" stroke-linecap="round" opacity=".85">
+    <path d="M400 280h55"/>
+    <path d="M745 280h55"/>
+  </g>
+  <text x="600" y="535" text-anchor="middle" fill="#dff3f2" font-family="Arial, sans-serif" font-size="34" font-weight="700">coursework experiments</text>
+</svg>

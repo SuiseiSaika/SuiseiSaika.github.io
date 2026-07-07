@@ -1,0 +1,129 @@
+<section class="product-tabs" aria-labelledby="product-tabs-title" data-product-tabs>
+  <header class="product-tabs-header">
+    <p class="eyebrow">System evolution</p>
+    <h2 id="product-tabs-title">Product Version and thesis prototype</h2>
+    <p>This project evolved from a graduate research prototype into a private-source product-oriented system for configurable conveyor grading workflows. The Product Version focuses on GUI- and configuration-driven operation, replaceable trained YOLO weights, adjustable class and mask settings, multi-source input handling, and a top-view hardware direction for higher object throughput. The thesis prototype focused on multi-view visual feature extraction, dataset construction, model-assisted annotation, and YOLO-based model development.</p>
+  </header>
+
+  <div class="product-tab-list" role="tablist" aria-label="Product Grading versions">
+    <button
+      id="product-version-tab"
+      type="button"
+      role="tab"
+      aria-selected="true"
+      aria-controls="product-version-panel"
+      tabindex="0"
+    >
+      Product Version
+    </button>
+    <button
+      id="thesis-prototype-tab"
+      type="button"
+      role="tab"
+      aria-selected="false"
+      aria-controls="thesis-prototype-panel"
+      tabindex="-1"
+    >
+      Prototype (Master’s Thesis)
+    </button>
+  </div>
+
+  <section
+    id="product-version-panel"
+    class="product-tab-panel"
+    role="tabpanel"
+    aria-labelledby="product-version-tab"
+    tabindex="0"
+  >
+    <h3>Overview</h3>
+    <p>A private-source product-oriented AI application for configurable conveyor product grading. The system combines multi-source input handling, YOLO-based visual inference, replaceable trained weights, configurable class and mask settings, grading logic, GUI-driven operation, and structured result workflows.</p>
+
+    <h3>Implementation Focus</h3>
+    <ul>
+      <li>Supports video, camera, and RealSense-oriented input workflows.</li>
+      <li>Uses Jetson Orin Nano + Intel RealSense D435 as the test environment.</li>
+      <li>Applies YOLO-based visual inference within the grading workflow.</li>
+      <li>Is designed to support different conveyor-object grading tasks by swapping trained YOLO weights and adjusting GUI and configuration settings.</li>
+      <li>Provides class definitions, mask-related configuration, grading logic, input-source selection, and runtime execution parameters.</li>
+      <li>Uses a top-view hardware direction designed for higher object throughput.</li>
+    </ul>
+
+    <h3>Workflow</h3>
+    <ul>
+      <li>GUI-driven runtime setup and input-source selection.</li>
+      <li>Model and inference configuration with class, mask, and grading customization.</li>
+      <li>Launch and stop control, runtime logs, result navigation, and structured result review.</li>
+    </ul>
+  </section>
+
+  <section
+    id="thesis-prototype-panel"
+    class="product-tab-panel"
+    role="tabpanel"
+    aria-labelledby="thesis-prototype-tab"
+    tabindex="0"
+    hidden
+  >
+    <h3>Overview</h3>
+    <p>A graduate research prototype focused on building and validating the computer-vision foundation for product grading. The prototype explored how multi-view visual information, dataset construction, synthetic data, model-assisted annotation, and YOLO-based model training could support the grading workflow.</p>
+
+    <h3>Implementation Focus</h3>
+    <ul>
+      <li>Used top, front, and back views for multi-view visual feature extraction.</li>
+      <li>Explored YOLO-based detection and segmentation for product grading.</li>
+      <li>Developed the dataset construction and annotation workflow with synthetic data.</li>
+      <li>Applied SAM-assisted labeling, model-assisted annotation, and pseudo-labeling at a high level.</li>
+      <li>Included preprocessing, augmentation, model training, and evaluation.</li>
+      <li>Used Jetson Orin Nano + Intel RealSense D435 as the test environment.</li>
+    </ul>
+
+    <h3>Research Workflow</h3>
+    <p>The prototype connected multi-view data capture, dataset preparation, annotation support, preprocessing, augmentation, YOLO-based model training, and evaluation into a research workflow. It established the computer-vision and model-development foundation that informed the later Product Version.</p>
+  </section>
+
+  <noscript>
+    <style>.product-tab-panel[hidden] { display: block; }</style>
+    <p class="product-tabs-noscript">JavaScript is unavailable, so both sections are shown in document order.</p>
+  </noscript>
+</section>
+
+<script>
+  document.querySelectorAll<HTMLElement>('[data-product-tabs]').forEach((container) => {
+    const tabs = Array.from(container.querySelectorAll<HTMLButtonElement>('[role="tab"]'));
+    const panels = Array.from(container.querySelectorAll<HTMLElement>('[role="tabpanel"]'));
+
+    const activateTab = (activeTab: HTMLButtonElement, moveFocus = true) => {
+      tabs.forEach((tab) => {
+        const isActive = tab === activeTab;
+        tab.setAttribute('aria-selected', String(isActive));
+        tab.tabIndex = isActive ? 0 : -1;
+      });
+
+      panels.forEach((panel) => {
+        panel.hidden = panel.id !== activeTab.getAttribute('aria-controls');
+      });
+
+      if (moveFocus) activeTab.focus();
+    };
+
+    tabs.forEach((tab, index) => {
+      tab.addEventListener('click', () => activateTab(tab));
+      tab.addEventListener('keydown', (event) => {
+        let nextIndex = index;
+
+        if (event.key === 'ArrowRight' || event.key === 'ArrowDown') nextIndex = (index + 1) % tabs.length;
+        if (event.key === 'ArrowLeft' || event.key === 'ArrowUp') nextIndex = (index - 1 + tabs.length) % tabs.length;
+        if (event.key === 'Home') nextIndex = 0;
+        if (event.key === 'End') nextIndex = tabs.length - 1;
+
+        if (nextIndex !== index) {
+          event.preventDefault();
+          activateTab(tabs[nextIndex]);
+        }
+      });
+    });
+
+    const selectedTab = tabs.find((tab) => tab.getAttribute('aria-selected') === 'true');
+    if (selectedTab) activateTab(selectedTab, false);
+  });
+</script>

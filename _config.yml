@@ -1,11 +1,10 @@
-title: Chang Shuo (Johnson) Chen # your name (or website title) here
-logo: "/images/photo.jpeg?raw=true" # your photo (or logo) here
-description: > # your text below (remove <br> elements if you don't need line breaks)
-  Bachelor's degree in Management Information Systems, National Chengchi University
+title: Chang Shuo (Johnson) Chen
+logo: "/images/photo.jpeg?raw=true"
+description: >
+  Machine Learning / Computer Vision Engineer
+  <br>
+  Edge AI & AI System Integration
   <br><br>
-  Machine/Deep Learning, Computer Vision
-  <br><br>
-  <a href="https://www.linkedin.com/in/chang-shuo-johnson-chen-83013a193/">View My LinkedIn Profile</a> 
-  
+  B.S. in Management Information Systems, National Chengchi University
+linkedin_url: "https://www.linkedin.com/in/chang-shuo-johnson-chen-83013a193/"
 theme: jekyll-theme-minimal
-google_analytics: UA-000000-0 # your Google Analytics tracking ID here

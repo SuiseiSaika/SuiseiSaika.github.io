@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" role="img" aria-labelledby="t d">
+  <title id="t">Time-series anomaly scoring</title>
+  <desc id="d">Abstract time-series signal lines with highlighted anomaly spikes and compact scoring method labels</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#0f263b"/>
+      <stop offset="1" stop-color="#163b4c"/>
+    </linearGradient>
+    <filter id="soft" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="10"/>
+    </filter>
+  </defs>
+  <rect width="1200" height="675" fill="url(#bg)"/>
+  <g opacity=".18" stroke="#dff3f2" stroke-width="2">
+    <path d="M100 160h1000M100 260h1000M100 360h1000M100 460h1000M100 560h1000"/>
+    <path d="M160 95v500M340 95v500M520 95v500M700 95v500M880 95v500M1060 95v500"/>
+  </g>
+  <path d="M95 405 C160 392 210 342 270 360 S380 418 440 385 S535 255 594 286 S700 432 760 392 S850 335 912 352 S1015 430 1105 378" fill="none" stroke="#72d4d5" stroke-width="13" stroke-linecap="round"/>
+  <path d="M95 480 C190 445 255 505 335 466 S495 402 585 440 S750 530 845 475 S980 410 1105 455" fill="none" stroke="#8fb8ff" stroke-width="7" stroke-linecap="round" opacity=".68"/>
+  <g>
+    <circle cx="535" cy="255" r="42" fill="#f4b860" opacity=".22" filter="url(#soft)"/>
+    <circle cx="535" cy="255" r="22" fill="#f4b860"/>
+    <path d="M535 168v64" stroke="#f4b860" stroke-width="8" stroke-linecap="round"/>
+    <text x="535" y="146" text-anchor="middle" fill="#f4b860" font-family="Arial, sans-serif" font-size="28" font-weight="700">spike</text>
+  </g>
+  <g>
+    <circle cx="912" cy="352" r="38" fill="#ff7f7f" opacity=".2" filter="url(#soft)"/>
+    <circle cx="912" cy="352" r="20" fill="#ff7f7f"/>
+  </g>
+  <g font-family="Arial, sans-serif" font-size="28" font-weight="700" text-anchor="middle">
+    <rect x="160" y="105" width="98" height="54" rx="18" fill="#dff3f2" opacity=".95"/>
+    <rect x="280" y="105" width="98" height="54" rx="18" fill="#dff3f2" opacity=".95"/>
+    <rect x="400" y="105" width="98" height="54" rx="18" fill="#dff3f2" opacity=".95"/>
+    <rect x="520" y="105" width="98" height="54" rx="18" fill="#dff3f2" opacity=".95"/>
+    <text x="209" y="142" fill="#10283c">KNN</text>
+    <text x="329" y="142" fill="#10283c">PCA</text>
+    <text x="449" y="142" fill="#10283c">DFT</text>
+    <text x="569" y="142" fill="#10283c">DWT</text>
+  </g>
+  <g transform="translate(850 112)">
+    <rect width="210" height="118" rx="24" fill="#edf5f3" opacity=".95"/>
+    <path d="M36 82 C70 48 105 66 132 38 S164 32 178 26" fill="none" stroke="#087f8c" stroke-width="8" stroke-linecap="round"/>
+    <path d="M36 88h150" stroke="#b9d8d6" stroke-width="5" stroke-linecap="round"/>
+    <text x="105" y="106" text-anchor="middle" fill="#132238" font-family="Arial, sans-serif" font-size="19" font-weight="700">scoring</text>
+  </g>
+</svg>

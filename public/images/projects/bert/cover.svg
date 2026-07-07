@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" role="img" aria-labelledby="t d">
+  <title id="t">BERT multi-output learning</title><desc id="d">A shared encoder branches into regression and classification outputs</desc>
+  <rect width="1200" height="675" fill="#edf2f8"/><rect x="120" y="250" width="260" height="175" rx="28" fill="#132238"/><text x="250" y="350" text-anchor="middle" fill="#fff" font-family="Arial" font-size="48" font-weight="800">BERT</text>
+  <path d="M380 338h220M600 338l150-145M600 338l150 145" fill="none" stroke="#087f8c" stroke-width="13" stroke-linecap="round"/>
+  <rect x="750" y="115" width="330" height="155" rx="28" fill="#dff3f2" stroke="#8bbfc1" stroke-width="4"/><rect x="750" y="405" width="330" height="155" rx="28" fill="#fff2dd" stroke="#f4b860" stroke-width="4"/><text x="915" y="210" text-anchor="middle" fill="#05616b" font-family="Arial" font-size="34" font-weight="700">REGRESSION</text><text x="915" y="500" text-anchor="middle" fill="#714414" font-family="Arial" font-size="34" font-weight="700">CLASSIFICATION</text>
+</svg>

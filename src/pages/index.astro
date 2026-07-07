@@ -1,0 +1,100 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Hero from '../components/Hero.astro';
+import ProjectCard from '../components/ProjectCard.astro';
+import Timeline from '../components/Timeline.astro';
+import SkillBadge from '../components/SkillBadge.astro';
+import SectionTitle from '../components/SectionTitle.astro';
+import Contact from '../components/Contact.astro';
+import { timeline } from '../data/timeline';
+import { skillGroups } from '../data/skills';
+
+const projects = (await getCollection('projects')).sort((a, b) => a.data.order - b.data.order);
+const featuredProjects = projects.filter((project) => project.data.featured);
+const secondaryProjects = projects.filter((project) => !project.data.featured);
+
+const certifications = [
+  { title: 'Machine Learning', url: 'https://coursera.org/share/97485b47daa8b0543f5d5f850cc35206' },
+  { title: 'Deep Learning', url: 'https://coursera.org/share/99fee14fb34a858f2df4a546f81a44c3' },
+  { title: 'DeepLearning.AI TensorFlow Developer', url: 'https://coursera.org/share/d08708fcd424a0a266835c60f3bde941' },
+];
+---
+
+<BaseLayout>
+  <div class="container">
+    <Hero />
+  </div>
+
+  <section class="section container" id="projects" aria-labelledby="projects-title">
+    <SectionTitle
+      eyebrow="Selected work"
+      title="Software and AI applications from prototype to integration"
+      description="Four featured case studies spanning application integration, computer vision, retrieval and reranking, and multi-output learning."
+    />
+    <div class="project-grid">
+      {featuredProjects.map((project) => <ProjectCard project={project} />)}
+    </div>
+  </section>
+
+  <section class="section section-tinted" id="secondary-projects" aria-labelledby="secondary-projects-title">
+    <div class="container">
+      <SectionTitle
+        eyebrow="Additional work"
+        title="Secondary projects and focused experiments"
+        description="Focused experiments and coursework that show additional implementation practice across NLP, anomaly detection, and computer vision."
+      />
+      <div class="project-grid">
+        {secondaryProjects.map((project) => <ProjectCard project={project} />)}
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-tinted" id="timeline" aria-labelledby="timeline-title">
+    <div class="container">
+      <SectionTitle
+        eyebrow="Background"
+        title="Education & Experience"
+        description="A progression from information systems and product development to graduate AI work and application integration."
+      />
+      <Timeline items={timeline} />
+    </div>
+  </section>
+
+  <section class="section container" id="skills" aria-labelledby="skills-title">
+    <SectionTitle
+      eyebrow="Technical toolkit"
+      title="Skills grounded in project work"
+      description="A focused view of the tools and systems represented across the portfolio."
+    />
+    <div class="skill-groups">
+      {skillGroups.map((group) => (
+        <article class="skill-group reveal">
+          <h3>{group.title}</h3>
+          <div class="skill-cloud">
+            {group.skills.map((skill) => <SkillBadge label={skill} />)}
+          </div>
+        </article>
+      ))}
+    </div>
+  </section>
+
+  <section class="section section-tinted" aria-labelledby="certifications-title">
+    <div class="container">
+      <SectionTitle eyebrow="Verified learning" title="Certifications" />
+      <div class="certification-grid">
+        {certifications.map((certification) => (
+          <a class="certification-card reveal" href={certification.url}>
+            <span>Coursera certificate</span>
+            <strong>{certification.title}</strong>
+            <span aria-hidden="true">View credential ↗</span>
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="section container">
+    <Contact />
+  </section>
+</BaseLayout>

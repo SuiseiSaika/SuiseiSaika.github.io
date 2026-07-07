@@ -1,51 +1,82 @@
-## Developer Portfolio Landing Page Template
+# Chang Shuo (Johnson) Chen — Astro Portfolio POC
 
-### Introduction
+This branch contains an Astro + TypeScript proof-of-concept for the portfolio at
+[https://suiseisaika.github.io/](https://suiseisaika.github.io/). The existing
+Jekyll files remain in the repository so the current production implementation
+can be restored or compared during evaluation.
 
-Use this template if you need a quick developer / data science portfolio! Based on a Minimal Jekyll theme for GitHub Pages.
+## Goals
 
-<img src="images/demo.gif?raw=true"/>
+- Present Machine Learning, Computer Vision, Edge AI, and AI System Integration work clearly.
+- Store case studies as typed Markdown content collections.
+- Generate a fully static site suitable for GitHub Pages.
+- Use restrained CSS motion with `prefers-reduced-motion` support.
+- Keep unknown dates, metrics, and project links explicitly marked `TODO`.
 
-### Installation
+## Local development
 
-See full step by step tutorial [on Medium](https://medium.com/@evanca/set-up-your-portfolio-website-in-less-than-10-minutes-with-github-pages-d0efa8ff56fd).
-___
+Requirements: Node.js 24+ and pnpm 11+.
 
-You can use the editor on GitHub to maintain and preview the content for your website in Markdown files.
-
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
-
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
+```bash
+pnpm install
+pnpm dev
 ```
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+Open `http://localhost:4321/`.
 
-### Roadmap
+Production checks:
 
-See the [open issues](https://github.com/evanca/machine-learning_optimizing-app-offers-with-starbucks/issues) for a list of proposed features (and known issues).
-___
+```bash
+pnpm check
+pnpm build
+pnpm preview
+```
 
-### References
+The static output is written to `dist/`.
 
-[1] Jekyll theme "Minimal" for GitHub Pages: https://github.com/pages-themes/minimal (CC0 1.0 Universal License)
-<br>[2] Dummy photo via: https://pixabay.com/photos/man-male-adult-person-caucasian-1209494/ (Pixabay License)
-<br>[3] Dummy thumbnail image created by rawpixel.com: https://www.freepik.com/free-vector/set-elements-infographic_2807573.htm (Standard Freepik License)
+## Project structure
+
+```text
+src/
+  components/          Reusable portfolio sections and cards
+  content/projects/    Markdown case studies
+  data/                Timeline and skill data
+  layouts/             Shared HTML and case-study layouts
+  pages/               File-based routes
+  styles/              Global responsive styling and CSS motion
+  content.config.ts    Typed project collection schema
+public/
+  images/              Profile, social, and project cover assets
+  favicon.svg
+.github/workflows/
+  astro-pages.yml      Branch checks and manual Pages deployment
+astro.config.mjs
+package.json
+tsconfig.json
+```
+
+## GitHub Pages deployment
+
+The workflow builds every push to `experiment/astro-portfolio` but deploys only
+when manually triggered with **Run workflow**. This prevents experimental pushes
+from automatically replacing the current Jekyll site.
+
+To evaluate deployment:
+
+1. Push `experiment/astro-portfolio`.
+2. In repository **Settings → Pages**, select **GitHub Actions** as the source.
+3. Run the **Astro Pages POC** workflow manually.
+
+Important: a manual deployment publishes the Astro POC to the repository's one
+GitHub Pages environment and therefore replaces the currently served Jekyll
+build until another deployment restores it.
+
+For a permanent migration, change the workflow trigger to the chosen production
+branch only after content review, final metrics, link verification, and approval.
+
+## Content integrity
+
+The case studies preserve the claims already present in the Jekyll homepage.
+The PyQt6 GUI entry includes only the framework and integration scope confirmed
+so far. No DevOps / CI/CD case study is included because no verified source
+content currently exists for it.

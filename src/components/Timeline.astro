@@ -1,0 +1,26 @@
+---
+import type { TimelineItem } from '../data/timeline';
+
+interface Props {
+  items: TimelineItem[];
+}
+
+const { items } = Astro.props;
+---
+
+<ol class="timeline">
+  {items.map((item) => (
+    <li class="timeline-item reveal">
+      <div class="timeline-marker" aria-hidden="true"></div>
+      <div class="timeline-year">{item.year}</div>
+      <div class="timeline-content">
+        <h3>{item.event}</h3>
+        <p class="timeline-organization">{item.organization}</p>
+        <p>{item.description}</p>
+        <ul class="tag-list" aria-label="Technical highlights">
+          {item.technologies.map((technology) => <li>{technology}</li>)}
+        </ul>
+      </div>
+    </li>
+  ))}
+</ol>
