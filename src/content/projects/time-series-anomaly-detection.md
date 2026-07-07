@@ -6,7 +6,7 @@ year: "2024"
 status: "Individual course assignment · Secondary"
 featured: false
 image: "/images/projects/anomaly/cover.svg"
-imageAlt: "Abstract time-series signals with highlighted anomaly spikes"
+imageAlt: "Abstract time-series anomaly scoring with highlighted signal spikes"
 tags:
   - "KNN"
   - "PCA"

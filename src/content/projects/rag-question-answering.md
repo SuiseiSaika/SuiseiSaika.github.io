@@ -42,8 +42,6 @@ Experimented with Llama, Gemma, and Phi models using unified prompt templates fo
 
 The best reported RAG configuration answered **9/10** course-defined questions correctly, compared with **4/10** for the no-RAG baseline. These values summarize a focused comparison over ten course-defined questions and are interpreted within that assignment-scale evaluation.
 
-The public showcase reconstructs chunking, dense retrieval, prompt construction, citation records, and paired evaluation with deterministic synthetic text. It is separate from the original course environment.
-
 ## Public showcase scope
 
-The public showcase presents chunking, retrieval, prompt construction, citation records, and paired evaluation using deterministic synthetic text. Future additions may include a prompt/retrieval comparison table, an example question-answer trace, and latency or cost measurements prepared in a portfolio-safe format.
+The public showcase presents a cleaned synthetic implementation summary that is separate from the original course environment. Future additions may include a prompt/retrieval comparison table, an example question-answer trace, and latency or cost measurements prepared in a portfolio-safe format.

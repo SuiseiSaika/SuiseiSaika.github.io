@@ -17,7 +17,7 @@ tags:
 metrics:
   - label: "Kaggle private MAP@25"
     value: "0.45365"
-  - label: "Referenced baseline MAP@25"
+  - label: "Referenced public notebook MAP@25"
     value: "0.43370"
 links:
   - label: "Showcase"
@@ -45,9 +45,9 @@ The team report also compared candidate counts, choice-set sizes, and temperatur
 
 ## Evaluation summary
 
-The adapted reranking experiment reached a Kaggle private MAP@25 score of **0.45365**. Compared with the referenced public baseline MAP@25 of **0.43370**, this corresponds to an absolute gain of **+0.01995 MAP@25**, or approximately **+4.6% relative improvement**.
+The adapted reranking experiment reached a Kaggle private MAP@25 score of **0.45365**. Compared with the referenced public notebook MAP@25 of **0.43370**, this corresponds to an absolute difference of **+0.01995 MAP@25**, or approximately **+4.6% relative score increase**.
 
-The score comparison accompanies the reranking experiment design, while the case study focuses on candidate-pool expansion, tournament restructuring, the top-25 workflow, and experiment interpretation. Because several variables changed across the comparison, the result is interpreted at the overall experiment-design level rather than as a single-variable causal effect.
+The platform-observed score comparison accompanies the reranking experiment design, while the case study focuses on candidate-pool expansion, tournament restructuring, the top-25 workflow, and experiment interpretation. Because several variables changed across the comparison, the result is interpreted at the overall experiment-design level rather than as a single-variable causal effect.
 
 ## Project context
 

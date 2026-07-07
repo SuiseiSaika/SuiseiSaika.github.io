@@ -40,7 +40,7 @@ The course project used the third-party YOLOv7 implementation and CityCam data p
 
 ## Public showcase
 
-The linked showcase presents aggregate metrics, synthetic evaluation records, and cleaned reporting utilities. It describes the experiment workflow without redistributing surveillance imagery, CityCam assets, training outputs, weights, or the third-party YOLOv7 implementation.
+The public showcase focuses on the aggregate experiment workflow, strategy comparison, cleaned reporting utilities, and synthetic evaluation records while keeping raw assignment assets and third-party detector code outside the portfolio repository.
 
 ## Result context
 

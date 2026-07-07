@@ -6,7 +6,7 @@ year: "2023–2024"
 status: "Secondary · Coursework and experiments"
 featured: false
 image: "/images/projects/sequence/cover.svg"
-imageAlt: "Abstract technical coursework represented as connected model and data flows"
+imageAlt: "Abstract technical coursework cover spanning NLP, anomaly detection, and computer vision"
 tags:
   - "NLP"
   - "Anomaly detection"

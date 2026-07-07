@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" role="img" aria-labelledby="t d">
-  <title id="t">PyQt6 AI inference GUI</title><desc id="d">A stylized desktop AI application interface</desc>
+  <title id="t">Desktop AI inference GUI</title><desc id="d">A stylized desktop AI application interface</desc>
   <rect width="1200" height="675" fill="#e8f4f4"/>
   <rect x="115" y="82" width="970" height="510" rx="28" fill="#fff" stroke="#8bbfc1" stroke-width="4"/>
   <rect x="115" y="82" width="970" height="66" rx="28" fill="#132238"/><circle cx="164" cy="115" r="10" fill="#f4b860"/>
